@@ -22,7 +22,7 @@ This module should be used with trainees who are in position of making design de
 
 ## What is an inclusive app ?
 
-We defined inclusiveness as **TODO**. From there, we have to ask ourselves: what is an inclusive app? 
+Using the [Cambridge's dictionary's definition](https://dictionary.cambridge.org/dictionary/english/inclusiveness), we defined inclusiveness as **the quality of including many different types of people and treating them all fairly and equally**. From there, we have to ask ourselves: what is an inclusive app?
 
 Put simply, we can define an inclusive application as one that can not only be used completely, comfortably and safely by all users, but also in which they can all thrive, feel welcome and express themselves.
 
@@ -32,7 +32,7 @@ Making an inclusive app is thus taking care of everyone, including minorities.
 
 For every feature, every interface, every content that you are building, always ask yourself : is this element inclusive ? Are there human characteristics that could prevent a user from understanding, interacting, or even feeling well with the provided content ?
 
-Here is a *non-exhaustive* list of human characteristics to keep in mind in order to include as many people as possible : 
+Here is a *non-exhaustive* list of human characteristics to keep in mind in order to include as many people as possible :
 
 - Age
 - Culture
@@ -45,7 +45,7 @@ Here is a *non-exhaustive* list of human characteristics to keep in mind in orde
 - Sexuality
 - Socio-economic context
 
-Though these categories can be useful to get an idea of common characteristics often leading to discrimination, we should not see them as a checklist of requirements to be accessible. 
+Though these categories can be useful to get an idea of common characteristics often leading to discrimination, we should not see them as a checklist of requirements to be accessible.
 
 Moreover, human experiences are complex and evolving as they always emerge from intersections of those characteristics.
 
@@ -69,7 +69,7 @@ Designers can have a great impact on the inclusiveness of their product. By keep
 
 An important part of making an app inclusive is to make the UI as accessible to the widest range of people as possible.
 
-As we said earlier, we ideally don’t “make an interface accessible”. Rather, we design interfaces to be accessible, so that they support as many ways as possible of interacting with your app. 
+As we said earlier, we ideally don’t “make an interface accessible”. Rather, we design interfaces to be accessible, so that they support as many ways as possible of interacting with your app.
 
 Alternative, underlying UIs that are built for “disabled” people are often referred to as Accessible User Interfaces (AUI), sometimes as accessibility tree. At first, this concept seems very useful, because thinking of accessibility this way pushes us to make intended and meaningful design choices for how our apps should be accessed using various assistive technologies, font sizes, settings, *etc*, and to think of accessibility with a wider approach than just adding labels to buttons. It’s about designing a whole new UI - an AUI, separate from the one most users will use.
 
@@ -80,7 +80,7 @@ That said, from our perspective, thinking UI and AUI as two distinct interfaces 
 - AUI as a concept completely forgets inclusivity and intersectionality, as it draws a strict line between the “able-bodied” and the “disabled”.
 - AUI can also create a pitfall, pushing developers to create the UI first, and then deriving an AUI from it, which makes the concept unhelpful.
 
-We thus prefer to think an inclusive user interface (IUI) as a whole UI that maximizes the way it can be interacted with, in order to allow the greatest variety of particular experiences and to satisfy as many needs as possible. 
+We thus prefer to think an inclusive user interface (IUI) as a whole UI that maximizes the way it can be interacted with, in order to allow the greatest variety of particular experiences and to satisfy as many needs as possible.
 
 ![The first half of the drawing represents two rectangles, representing respectively a UI and an AUI. Circles representing the “able-bodied users” are pointing to the UI with an arrow. Diamonds representing the “disabled users” are pointing to the AUI with an arrow.
 The second half represents different shapes representing the diversity of users, pointing to the same IUI which is made by overlaying many UIs, regrouped as one.](ressources/d-designing-inclusive-and-accessible-software/iui.png)
@@ -89,7 +89,7 @@ From a designer’s perspective, this means your interface should embed a wide s
 
 ## Designing an IUI
 
-Now, how do you concretely make an IUI ? 
+Now, how do you concretely make an IUI ?
 
 It is important to know that there is no *unique* way of designing inclusive interfaces, and that it is a slow and continuous work, rather than a one-time effort. Inclusiveness recommendations can never be exhaustive.
 
@@ -167,7 +167,7 @@ In this case, we would typically focus the last element of the discussion first,
 
 ### The UI is simple and intuitive
 
-A simple and intuitive UI benefits everyone. But while this might be a convenience for most users, this is a need for some of them. Wether due to cognitive disabilities or the use of assistive technologies, having an interface that is as simple and less cluttered as possible will instantly make it more accessible and inclusive! 
+A simple and intuitive UI benefits everyone. But while this might be a convenience for most users, this is a need for some of them. Wether due to cognitive disabilities or the use of assistive technologies, having an interface that is as simple and less cluttered as possible will instantly make it more accessible and inclusive!
 
 ### The UI has options to prevent motion sickness
 
@@ -254,4 +254,6 @@ Shew, Ashley (2024). *Against Technoableism: Rethinking Who Needs Improvement*, 
 
 [Apple Human Interface Guidelines: Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility)
 
-[Principles of Inclusice App Design (Apple)](https://developer.apple.com/videos/play/wwdc2025/316)
+[Principles of Inclusive App Design (Apple)](https://developer.apple.com/videos/play/wwdc2025/316)
+
+[Cambridge's dictionary's definition of inclusiveness](https://dictionary.cambridge.org/dictionary/english/inclusiveness)

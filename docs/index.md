@@ -6,6 +6,10 @@
 
 [🫳🏿 A-FNA: Feeling the need for accessibility](A-FNA.md)
 
+**C. From accessibility to inclusiveness**
+
+[🫂 C-WDU We are all disabled and unique : accessibility, plurality and intersectionality](C-WDU.md)
+
 **D. Designing inclusive and accessible software**
 
 [🎨 D-IDE: Inclusive design 101](D-IDE.md)
