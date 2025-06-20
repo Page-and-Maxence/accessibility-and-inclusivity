@@ -1,6 +1,8 @@
 # 🚀 A-ASP: Accessibility starting point
 
-> This short module allows people to share anonymously their initial position by answering questions regarding accessibility, before discussing the results collectively.
+    This short module allows people to share anonymously their initial position by
+    answering questions regarding accessibility, before discussing the results
+    collectively.
 
 **⛳️ Section**: A. What is accessibility ?
 
@@ -9,8 +11,6 @@
 **⏱️ ️Duration**: 15'
 
 **📚 Prerequisites**: None
-
-**📖 Is a prerequisite to**: None
 
 ---
 

@@ -1,6 +1,8 @@
 # 🫳🏿 A-FNA: Feeling the need for accessibility
 
->Sometimes, understanding a concept is not enough. Feeling the need for accessibility and the impacts of ableism will make it easier for trainees to engage.
+    Sometimes, understanding a concept is not enough.
+    Feeling the need for accessibility and the impacts of ableism will make it easier
+    for trainees to engage.
 
 **⛳️ Section**: A. What is accessibility ?
 
@@ -9,8 +11,6 @@
 **⏱️ ️Duration**: 15'
 
 **📚 Prerequisites**: A-ASP: Accessibility starting point
-
-**📖 Is a prerequisite to**: Accessibility, inclusion & exclusion
 
 ---
 
