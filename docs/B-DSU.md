@@ -76,7 +76,7 @@ In [Against Technoableism: rethinking who needs improvement](https://wwnorton.co
 
 We cannot replace the perspectives of people with disabilities simply by reading about them or running a series of automated tests. We highly encourage recruiting people from diverse backgrounds in your team. The whole project will benefit from varying perspectives and it could help to leverage against systemic exclusion and hiring discriminations which affect minorities. In fact, [a study from the Chartered Institute for IT](https://www.bcs.org/articles-opinion-and-research/nearly-90-000-disabled-people-are-missing-from-tech-industry-says-professional-body/) states that in the UK alone, "Nearly 90,000 disabled people are 'missing' from tech industry".
 
-**But your working environment will never be representative of the whole world and every user.** As quoted from [Developing Inclusive Mobile Apps](https://link.springer.com/book/10.1007/978-1-4842-5814-9) in [🔭 Inclusive needs overview](B-INO.md):
+**But your working environment will never be representative of the whole world and every user.** As quoted in [🔭 Inclusive needs overview](B-INO.md):
 
 !!! Quote "Ashley Shew, *[Against Technoableism, Rethinking Who Needs Improvement](https://wwnorton.com/books/9781324036661)*"
     “Employing the word “users” can result in falling into the trap of thinking of users as one group – an amalgamation of people who are out there somewhere in the world using your app, a group of people that you’ll never meet and never know. This form of “group think” leads to creating a “one-size-fits-all” solution that, like everything claiming to be “one size fits all,” in reality fits no one.”

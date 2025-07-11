@@ -17,7 +17,7 @@
 
 Use this module to get a nuanced sense of what accessibility, ableism and techno-ableism really mean.
 
-## What is accessibility
+## What is accessibility?
 
 ### Collective definition of accessibility
 
@@ -71,7 +71,7 @@ In the [Accessible Canada Act (ACA)](https://laws-lois.justice.gc.ca/eng/acts/A-
 
 Additionally, French companies are subject to the EAA, which is mentioned below.
 
-🇪🇺 European Union
+**🇪🇺 European Union**
 
 The [European Accessibility Act](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/union-equality-strategy-rights-persons-disabilities-2021-2030/european-accessibility-act_en) states that accessibility "should be achieved by the systematic removal and prevention of barriers, preferably through a universal design or ‘design for all’ approach, which contributes to ensuring access for persons with disabilities on an equal basis with others."
 
