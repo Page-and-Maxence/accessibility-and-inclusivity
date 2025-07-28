@@ -67,7 +67,7 @@ Unlike Apple, Android has opened their accessibility API, allowing anyone to bui
 Display and text sizes might vary dramatically based on user needs. Making your app adaptable to those variables is quite straightforward:
 
 - Make sure your text font sizes are indeed affected by system settings. If not, [consider using *sp* as unit](https://developer.android.com/training/multiscreen/screendensities) for your sizes where you are required to use fixed values.
-- Avoid using ```maxLines``` to prevent text truncation.
+- Be careful when using ```maxLines``` to prevent text truncation as there is only few scenarios where it's the most relevant approach.
 
 ### Captions
 
