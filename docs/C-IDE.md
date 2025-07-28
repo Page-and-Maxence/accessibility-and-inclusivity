@@ -292,7 +292,7 @@ Another key to achieving your inclusiveness goals for your UI is to actively tes
 
 By groups, trainees are invited to design a simple interface (with pen and paper or any design tool they like) that aims at being as inclusive as possible.
 
-On possibility is to ask for an account creation screen for a social media app. The platform can differ from one group to the other.
+On possibility is to ask for an account creation screen for a social media app. The platform should differ from one group to the other to allow for multiple perspectives on UI design.
 
 - The interface should include:
     - Fields to fill in social media information (like name, gender, hobbies, *etc.*)
@@ -301,6 +301,12 @@ On possibility is to ask for an account creation screen for a social media app. 
     - A checkbox to accept the service’s TOS, with a link to access them
 
 The trainer can encourage the groups to think of the ways they can use creatively what they’ve just learned, without feeling the need to implement everything: inclusion is a journey, not an issue to be tackled in ten minutes anyway!
+
+The IUI created by the trainees should be used as a way of addressing common issues like:
+
+- What element should be grouped together? -> Those that don't make sense alone.
+- Should the back button be the last or the first element in focus order? -> On mobile the first, on desktop the last.
+- What should be selectable -> On mobile, every element containing information, on desktop every interactive element.
 
 ## Wrapping up
 
