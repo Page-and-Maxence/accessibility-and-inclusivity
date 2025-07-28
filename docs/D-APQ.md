@@ -82,14 +82,6 @@ KeyNavigation.up: addAccountItem
 KeyNavigation.down: shareButton
 ```
 
-In some case like a contextual menu, you might want to add conditional navigation:
-```QML
-KeyNavigation.backtab: index === 0 ? settingsButton: null
-KeyNavigation.tab: index === listView.count - 1 ? addAccountItem: null
-KeyNavigation.up: KeyNavigation.backtab
-KeyNavigation.down: KeyNavigation.tab
-```
-
 Regarding our chat view, we previously stated in [🎨 Inclusive design 101](C-IDE.md) that "*we would typically focus the last element of the discussion first, because it is typically the one of interest, and because it gives a quick access to the text input. But this is clearly a design choice that must be well-thought and tested in the context of your app.*" This is only one of the many possible implementations. We could also want to send users directly to the text stating the current discussion's name.
 
 Inside the list of messages, we could want users to navigate between elements using the arrows and TAB to directly go to the text input field - but once again, this is a design choice.
