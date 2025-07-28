@@ -9,7 +9,7 @@
 
 **👥 Audience**: Qt Developers and product teams
 
-**⏱️ ️Duration**: 10'
+**⏱️ Duration**: 10'
 
 **📚 Prerequisites**: [👩‍💻 Inclusive code 101](D-ICO.md)
 

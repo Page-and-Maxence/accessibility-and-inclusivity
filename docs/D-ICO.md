@@ -8,7 +8,7 @@
 
 **👥 Audience**: Developers
 
-**⏱️ ️Duration**: 15'
+**⏱️ Duration**: 15'
 
 **📚 Prerequisites**: [🫂 We are all disabled and unique : accessibility, plurality and intersectionality](B-WDU.md)
 

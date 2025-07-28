@@ -7,7 +7,7 @@
 
 **👥 Audience**: Designers
 
-**⏱️ ️Duration**: 15'
+**⏱️ Duration**: 15'
 
 **📚 Prerequisites**: [🎨 Inclusive design 101](C-IDE.md), [🔧 Inclusiveness technologies : Desktop](A-ITD.md)
 

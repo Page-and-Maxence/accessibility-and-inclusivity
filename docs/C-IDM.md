@@ -7,7 +7,7 @@
 
 **👥 Audience**: Everyone
 
-**⏱️ ️Duration**: 15'
+**⏱️ Duration**: 15'
 
 **📚 Prerequisites**: [🎨 Inclusive design 101](C-IDE.md), [📲 Assistive technologies: Mobile](A-ATM.md)
 

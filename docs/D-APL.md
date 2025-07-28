@@ -7,7 +7,7 @@
 
 **👥 Audience**: Apple developers and product teams
 
-**⏱️ ️Duration**: 25'
+**⏱️ Duration**: 25'
 
 **📚 Prerequisites**: [👩‍💻 Inclusive code 101](D-ICO.md)
 

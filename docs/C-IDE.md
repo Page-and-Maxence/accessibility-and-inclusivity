@@ -8,7 +8,7 @@
 
 **👥 Audience**: Designers
 
-**⏱️ ️Duration**: 30'
+**⏱️ Duration**: 30'
 
 **📚 Prerequisites**: [🫂 We are all disabled and unique](B-WDU.md)
 

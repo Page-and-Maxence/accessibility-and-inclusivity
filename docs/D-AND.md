@@ -7,7 +7,7 @@
 
 **👥 Audience**: Android developers and product teams
 
-**⏱️ ️Duration**: 15'
+**⏱️ Duration**: 15'
 
 **📚 Prerequisites**: [👩‍💻 Inclusive code 101](D-ICO.md)
 
