@@ -180,6 +180,42 @@ That's why we recommend NVDA.
 
 While being a very good tool, VoiceOver is only available on apple machines and therefore often not useful to most users.
 
+### Orca
+
+<div align="center">
+
+<table>
+        <thead>
+                <tr>
+                        <th>Platform</th>
+                        <th>Pros</th>
+                        <th>Cons</th>
+                </tr>
+        </thead>
+        <tbody>
+                <tr>
+                        <td>Linux</td>
+                        <td>
+                                <ul>
+                                        <li>Best option on Linux</li>
+                                        <li>Free and open-source</li>
+                                        <li>Greatly customizable</li>
+                                </ul>
+                        </td>
+                        <td>
+                                <ul>
+                                        <li>Not as powerful as other screen readers</li>
+                                        <li>Support may vary across apps</li>
+                                </ul>
+                        </td>
+                </tr>
+        </tbody>
+</table>
+
+</div>
+
+[Orca](https://orca.gnome.org/) is a FOSS screen reader available on Linux platforms. It is especially designed for GNOME. While it is not as complete as other screen readers like Jaws or NVDA, it is among the best tools natively available on Linux platforms. It even ships as default with Ubuntu. If you are looking for a screen reader to test your app on Linux, this tool is a good choice. Make sure to also test your app with other screen readers.
+
 ---
 
 ## Accessibility Insights for Windows
