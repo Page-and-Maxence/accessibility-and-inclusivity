@@ -1,0 +1,1854 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Accessibility and inclusiveness resources and training modules for open-source applications builders.">
+      
+      
+        <meta name="author" content="Maxence Vahedi & Page Magnier--Slimani">
+      
+      
+        <link rel="canonical" href="https://alterity-git.github.io/building-inclusive-open-source-software/D-APL.html">
+      
+      
+        <link rel="prev" href="D-ICO.html">
+      
+      
+        <link rel="next" href="D-APQ.html">
+      
+      
+      <link rel="icon" href="resources/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>🍎 Inclusive features and programming for Apple platforms - Building Inclusive Open Source Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inclusive-features-and-programming-for-apple-platforms" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Building Inclusive Open Source Software" class="md-header__button md-logo" aria-label="Building Inclusive Open Source Software" data-md-component="logo">
+      
+  <img src="resources/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Building Inclusive Open Source Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🍎 Inclusive features and programming for Apple platforms
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07zm-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13zm-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87zM19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35zm4.33-2.7 1.15-2.77 2.2 2.54zm1.15-4.96-1.14-2.78 3.34.24zM9.63 18.93l2.77 1.15-2.53 2.19z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="custom-light" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="custom-dark" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/alterity-git/building-inclusive-open-source-software" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alterity-git/building-inclusive-open-source-software
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Building Inclusive Open Source Software" class="md-nav__button md-logo" aria-label="Building Inclusive Open Source Software" data-md-component="logo">
+      
+  <img src="resources/logo.png" alt="logo">
+
+    </a>
+    Building Inclusive Open Source Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/alterity-git/building-inclusive-open-source-software" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alterity-git/building-inclusive-open-source-software
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    What is accessibility?
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            What is accessibility?
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-ASP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🚀 Accessibility starting point
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-FNA.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🫳🏿 Feeling the need for accessibility
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-AIE.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    👩‍🦽 Accessibility & Ableism
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-BCT.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🗺️ Brief cartography of today’s accessibility landscape
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-ITD.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🔧 Assistive technologies - Desktop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-ATM.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📲 Assistive technologies - Mobile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    From accessibility to inclusiveness
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            From accessibility to inclusiveness
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-INO.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🔭 Inclusiveness needs overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-WDU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🫂 We are all disabled and unique
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-DSU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🤺 Developer stance & user collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-IAP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ⚗️ Bring inclusiveness and accessibility to your pipeline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Designing inclusive and accessible software
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Designing inclusive and accessible software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="C-IDE.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨 Inclusive design 101
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="C-IDD.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🖥️ Inclusive design for Desktop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="C-IDM.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📱 Inclusive design for Mobile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Programming inclusive and accessible software
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Programming inclusive and accessible software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-ICO.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    👩‍💻 Inclusive code 101
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    🍎 Inclusive features and programming for Apple platforms
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="D-APL.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    🍎 Inclusive features and programming for Apple platforms
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apples-accessibility-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apple's accessibility model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apples-assistive-technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apple's Assistive Technologies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Apple&#39;s Assistive Technologies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#major-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Major features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minor-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minor features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility-in-swiftui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility in SwiftUI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessibility in SwiftUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-viewmodifier-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      The ViewModifier approach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The ViewModifier approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grouping-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grouping elements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grouping elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#combine" class="md-nav__link">
+    <span class="md-ellipsis">
+      .combine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      .ignore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contain" class="md-nav__link">
+    <span class="md-ellipsis">
+      .contain
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limits-to-this-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limits to this approach
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-a-custom-accessibility-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a custom accessibility architecture
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility-in-uikit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility in UIKit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility-inspector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility Inspector
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informing-users-on-your-apps-accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informing users on your app's accessibility
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wrapping-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wrapping up
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-APQ.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📗 Inclusive programming with Qt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-AND.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🤖 Inclusive features and programming for Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-JFX.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ☕️ Inclusive programming with JavaFX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-IWP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🕸️ Inclusive web programming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    To conclude and go further
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            To conclude and go further
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="E-CBU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎯 Conclusion, bibliography and useful resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="E-WYG.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🏃🏽‍♀️‍➡️ Where YOU go next!
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="E-CLS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    💬 Collective sharing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apples-accessibility-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apple's accessibility model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apples-assistive-technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apple's Assistive Technologies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Apple&#39;s Assistive Technologies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#major-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Major features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minor-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minor features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility-in-swiftui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility in SwiftUI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessibility in SwiftUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-viewmodifier-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      The ViewModifier approach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The ViewModifier approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grouping-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grouping elements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Grouping elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#combine" class="md-nav__link">
+    <span class="md-ellipsis">
+      .combine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      .ignore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contain" class="md-nav__link">
+    <span class="md-ellipsis">
+      .contain
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limits-to-this-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limits to this approach
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-a-custom-accessibility-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a custom accessibility architecture
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility-in-uikit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility in UIKit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility-inspector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility Inspector
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informing-users-on-your-apps-accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Informing users on your app's accessibility
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wrapping-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wrapping up
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="inclusive-features-and-programming-for-apple-platforms">🍎 Inclusive features and programming for Apple platforms</h1>
+<div class="admonition info">
+<p class="admonition-title">In this module</p>
+<p>This module introduces to Apple's accessibility features, and to the practice of programming accessibility for Apple platforms.</p>
+</div>
+<p><strong>⛳️ Section</strong>: D. Programming inclusive and accessible software</p>
+<p><strong>👥 Audience</strong>: Apple developers and product teams</p>
+<p><strong>⏱️ Duration</strong>: 25'</p>
+<p><strong>📚 Prerequisites</strong>: <a href="D-ICO.html">👩‍💻 Inclusive code 101</a></p>
+<hr />
+<h2 id="when-to-use">When to use</h2>
+<p>This module should be used with trainees who need or want to have a technical understanding how Apple's approach on accessibility. It can be useful for product managers or designers who want to understand Apple accessibility features, and what it takes to implement them (especially for the last sections).</p>
+<h2 id="introduction">Introduction</h2>
+<p>For years, Apple has been setting the standard for mobile accessibility. Their design principles, guidelines, as well as the tools and technologies they built are among the best out there. They also provide extensive resources on how to use and apply them. Thanks to these, if you're developing natively for Apple platforms, implementing accessible interfaces will likely be easier than for other OSes.</p>
+<p>Consequently, we won't be covering everything you should know about Apple accessibility in this module. Rather, we'll provide a very synthetic overview referencing useful official and third-party resources, along with some extra tips we wish we had when we started out.</p>
+<h2 id="apples-accessibility-model">Apple's accessibility model</h2>
+<p>The model used by Apple to implement assistive technologies support to apps is based on accessibility attributes. It is quite close to Android and to the abstract model we detailed in <a href="C-IDM.html">📱 Inclusive design for mobile</a>, but we'll detail specific technical consideration and vocabulary here:</p>
+<p><img alt="Illustration of Apple's accessibility model, as explained below." src="resources/d-programming-inclusive-and-accessible-software/aplAccessibilityModel.png" /></p>
+<ul>
+<li>
+<p>An <a href="https://developer.apple.com/documentation/swiftui/view-accessibility#Elements"><strong>accessibility element</strong></a> is an element of the interface which will be accessed atomically (i.e. without dividing it into multiple elements) by cursor interfaces (like VoiceOver or Switch Control). Every element has accessibility attributes. Every UI Component provided by Apple is an accessibility element. You then have the choice to regroup them, either by completely resetting the element's attribute, or by automatically computing the children's one. In complex cases, we would recommend manually resetting computing those properties to get clean labels, actions etc.</p>
+</li>
+<li>
+<p>A <a href="https://developer.apple.com/documentation/swiftui/view/accessibilitylabel(_:)-1d7jv"><strong>label</strong></a> qualifies the name of an element. It is read by screen readers, and used in order to access the element with Voice Control. This is why it should always be as short as possible yet distinct from other elements of the interface. For complementary information on the element, the value should be used. For example, a button should have its title as label.</p>
+</li>
+<li>
+<p>A <a href="https://developer.apple.com/documentation/swiftui/view/accessibilityvalue(_:)-z9mo"><strong>value</strong></a> gives information about the element, like its state or any other information that is not in the label. It is typically read after the label by the screen reader. For example, for a toggle, the value would give its state (enabled or disabled).</p>
+</li>
+<li>
+<p>A <a href="https://developer.apple.com/documentation/swiftui/view/accessibilityaddtraits(_:)"><strong>trait</strong></a> qualifies an element on its type or role: it is mainly useful to the system, to know which information to read first, which levers or indications to expose to the user, etc. Multiple ones can (and likely should) be applied on one element. Depending on the components you are working with, some traits are applied automatically, and some others require to explicitly apply a modifier. There are many accessibility traits (<a href="https://developer.apple.com/documentation/swiftui/accessibilitytraits">SwiftUI</a>, <a href="https://developer.apple.com/documentation/uikit/uiaccessibilitytraits">UIKit</a>), when beginning your accessibility journey, we recommend checking this list regularly when you add traits to your elements as it is a good way to try and understand them in context. For example, here are a few:</p>
+<ul>
+<li><strong><a href="https://developer.apple.com/documentation/swiftui/accessibilitytraits/isbutton">Button</a>:</strong> the name speaks for itself!</li>
+<li><strong><a href="https://developer.apple.com/documentation/swiftui/accessibilitytraits/isheader">Header</a>:</strong> this one is absolutely crucial as it allows users to quickly skip through the headings of the view.</li>
+<li><strong><a href="https://developer.apple.com/documentation/swiftui/accessibilitytraits/allowsdirectinteraction">Allows direct interaction</a>:</strong> allows users to interact with the element through touch, bypassing VoiceOver. A typical usage example is for a piano app.</li>
+</ul>
+</li>
+<li>
+<p>An <a href="https://developer.apple.com/documentation/swiftui/view-accessibility#Actions"><strong>action</strong></a> is a function <code>() -&gt; Void</code> that will be triggered by a double-tap in VoiceOver, or a tap with Switch Control. There is a default one, which is not named but called on the UI "Activate", and an arbitrary number of custom ones which are named and can be selected using swipes in VoiceOver, and a dedicated contextual menu in Switch Control. It is very useful and often crucial to provide many actions on an element. For example, for a discussion in a list, the default action would be to open it, and a custom one could be to mute it.</p>
+</li>
+<li>
+<p>A <a href="https://developer.apple.com/documentation/swiftui/view-accessibility#Hints"><strong>hint</strong></a> gives additional textual information or context to the user that will be read last. Hints should help users who have lost the context of where they are, or who don't understand how to interact with an element.</p>
+</li>
+<li>
+<p>A <a href="https://developer.apple.com/documentation/swiftui/view/accessibilitysortpriority(_:)"><strong>sort priority</strong></a> allows to implement a custom focus order. Elements can also be <a href="https://developer.apple.com/documentation/swiftui/view-accessibility#Focus">programmatically focused</a>, which is very useful as you often don't want to start by the first element in the focus order.</p>
+</li>
+<li>
+<p><a href="https://developer.apple.com/documentation/swiftui/view/accessibilitycustomcontent(_:_:importance:)">Custom content</a> gives the opportunity to convey information that you could not give through the other attributes.</p>
+</li>
+<li>
+<p>Custom <a href="https://developer.apple.com/documentation/swiftui/view/accessibilitysortpriority(_:)"><strong>gestures</strong></a> can also be implemented for advanced custom components that require touch customization.</p>
+</li>
+</ul>
+<h2 id="apples-assistive-technologies">Apple's Assistive Technologies</h2>
+<p>Having an understanding of the assistive technologies for which you are building your app is necessary to delivering a great experience. Apple has a lot of them, which they list <a href="https://developer.apple.com/accessibility/">on this page</a>. Here is our non-exhaustive condensed introduction to Apple-specific Assistive technologies, along with some additional information and tips. Clicking on highlighted keywords will take you to documentation and useful resources.</p>
+<h3 id="major-features">Major features</h3>
+<ul>
+<li>
+<p><a href="https://developer.apple.com/documentation/accessibility/voiceover/"><strong>VoiceOver</strong></a> is Apple's screen reader. It allows users to access your app without seeing the screen. Like <a href="https://www.youtube.com/watch?v=MEp9DtiTw3s">TalkBack, Android's screen reader</a>, it is gesture-based, meaning that users can execute <a href="https://appt.org/en/docs/ios/features/voiceover">simple to complex gestures</a> in order to control their device. Supporting <a href="https://developer.apple.com/documentation/swiftui/view-accessibility#Working-with-rotors">custom rotors actions</a> is a great way to provide quick app-specific actions that go beyond the bare necessity. <strong>Learning how to use VoiceOver is probably the best way to understand the levers you can activate to enhance the accessibility of your app</strong>, as it is very intuitive, commonly used, and relies both on labels and group focus.</p>
+</li>
+<li>
+<p><a href="https://developer.apple.com/documentation/accessibility/voice-control"><strong>Voice Control</strong></a> is a feature allowing users to interact with their devices using their voice. One takeaway of trying Voice Control is understanding how labels differ from values. In fact, labels are used by Voice Control users to select elements on the screen. We can therefore understand that labels should be short, unique identifiers reflecting what is shown on the screen. Values, on the other side, are only read by screen readers and can (and should) be more extensive.</p>
+</li>
+<li>
+<p><a href="https://developer.apple.com/documentation/accessibility/switch-control"><strong>Switch Control</strong></a> let users navigate your app with the switch devices of their choice, and/or mouth gestures. Having a clear and efficient navigation and grouping is crucial to making it accessible to users who rely on switch control. While Switch Control support typically comes for free when VoiceOver is, it's a great idea to think about the ways you can enhance its users' experience by <a href="https://developer.apple.com/videos/play/wwdc2020/10019/">implementing simple custom behaviors allowing for smarter and faster interaction</a>.</p>
+</li>
+<li>
+<p><a href="https://developer.apple.com/documentation/accessibility/assistive-access"><strong>Assistive access</strong></a>'s goal is to provide a minimal experience for people with certain cognitive disabilities or who are less familiar with new technologies. With little effort, developers can allow everyone to use the basic features of their app. <strong><a href="https://developer.apple.com/videos/play/wwdc2022/10152/">Guided access</a></strong> allows these users to get a guided experience with custom restrictions, allowing to disable keyboard inputs, volume buttons, <em>etc</em>. With the provided API, you can provide restrictions that are specific to your app. For example, you can disable the access to the settings. This feature can also be used to function like <a href="https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode">Android's lock task mode</a> (often called "kiosk mode") in business context.</p>
+</li>
+</ul>
+<h3 id="minor-features">Minor features</h3>
+<ul>
+<li>
+<p>For vision-impaired users:</p>
+<ul>
+<li>Apple provides a <strong>Text to <a href="https://developer.apple.com/documentation/accessibility/speech/">Speech</a></strong> API. While it is not always required for developers to use it as VoiceOver natively does the job, using it allows to programmatically announce events that are currently only conveyed visually, like a new message.</li>
+<li><strong><a href="https://developer.apple.com/videos/play/wwdc2024/10074/">Dynamic Type</a></strong> is Apple's fancy name for their advanced system font settings, which allows developers to adapt their app's layout to varying font sizes.</li>
+<li><strong><a href="https://developer.apple.com/videos/play/wwdc2020/10020/">Display customization settings</a></strong> like high contrast or reduced motion can be detected to adapt your app's behavior.</li>
+<li><strong><a href="https://github.com/cvs-health/ios-swiftui-accessibility-techniques/blob/main/iOSswiftUIa11yTechniques/Documentation/MagicTap.md">Magic tap</a></strong> is a very useful feature that is rarely implemented in third-party apps. It allows to perform an arbitrary action upon a "magic tap" - a 2 fingers double tap with VoiceOver activated. If designed and hinted well, it can allow for quicker and easier interactions.</li>
+<li>For apps serving audio and video content, builtin AVFoundation APIs <a href="https://developer.apple.com/documentation/avfoundation/selecting-subtitles-and-alternative-audio-tracks.">allows you to add <strong>alternative audio tracks</strong></a></li>
+</ul>
+</li>
+<li>
+<p>For users with limited physical or motors abilities:</p>
+<ul>
+<li><a href="https://developer.apple.com/videos/play/wwdc2021/10120/"><strong>Keyboard support</strong></a> in iOS and iPadOS give developers the opportunity to provide users with shortcuts to navigate their app faster and easier.</li>
+<li><a href="https://support.apple.com/en-gb/guide/iphone/iph66057d0f6/ios"><strong>Eye Tracking</strong></a> allows users to control their iPhone through gaze. There is - to our knowledge - typically no additional considerations for this technology.</li>
+<li><a href="https://developer.apple.com/documentation/swiftui/view/accessibilityquickaction(style:content:)/"><strong>Quick actions</strong></a> can be implemented to allow users wearing an Apple Watch to trigger custom behaviors by pinching twice.</li>
+</ul>
+</li>
+<li>
+<p>For users who are deaf of hard of hearing:</p>
+<ul>
+<li>For apps serving audio and video content, builtin AVFoundation APIs <a href="https://developer.apple.com/documentation/avfoundation/selecting-subtitles-and-alternative-audio-tracks.">allows you to add <strong>subtitles</strong></a>.</li>
+<li>Information conveyed through audio can also be played through <a href="https://developer.apple.com/documentation/corehaptics/preparing_your_app_to_play_haptics/"><strong>haptics</strong> which can even be customized</a> to fit your needs. If your app plays music, <strong><a href="https://developer.apple.com/documentation/mediaaccessibility/music-haptics/">Music Haptics</a></strong> allows users to enjoy music through haptic feedback.</li>
+</ul>
+</li>
+</ul>
+<h2 id="accessibility-in-swiftui">Accessibility in SwiftUI</h2>
+<h3 id="the-viewmodifier-approach">The ViewModifier approach</h3>
+<p>Accessibility in SwiftUI relies heavily on the use of accessibility modifiers, which <a href="https://developer.apple.com/documentation/swiftui/view-accessibility">the list</a> can be very inspiring to come up with accessibility features. These are essentially <a href="https://developer.apple.com/documentation/swiftui/viewmodifier">view modifiers</a> applying accessibility attributes or transformations. There are plenty of them, and we will not detail them here. Rather, we'll briefly discuss this approach and the issues you might run into using those.</p>
+<h4 id="grouping-elements">Grouping elements</h4>
+<p>Something you will likely find yourself doing very regularly is grouping elements. As it is rather complicated to get started with, we will explain the basics. As said earlier, there are different ways of doing so, each corresponding to a case of the <a href="https://developer.apple.com/documentation/swiftui/accessibilitychildbehavior"><code>AccessibilityChildBehavior</code></a> enum:</p>
+<div class="language-swift highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">var</span><span class="w"> </span><span class="nv">body</span><span class="p">:</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="n">View</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">Group</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="n">NiceView</span><span class="p">()</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="n">VeryNiceView</span><span class="p">()</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="p">.</span><span class="n">accessibilityElement</span><span class="p">(</span><span class="n">children</span><span class="p">:</span><span class="w"> </span><span class="o">&lt;</span><span class="p">#</span><span class="n">T</span><span class="p">##</span><span class="n">AccessibilityChildBehavior</span><span class="p">#</span><span class="o">&gt;</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<h5 id="combine">.combine</h5>
+<p><strong><code>.combine</code></strong> will create a new parent accessibility element, drop its children elements from the accessibility tree (<code>NiceView</code> and <code>VeryNiceView</code> in our example), and compute new accessibility attributes based on the remove children's ones. As indicated in the documentation:</p>
+<div class="admonition quote">
+<p class="admonition-title"><a href="https://developer.apple.com/documentation/swiftui/accessibilitychildbehavior/combine">SwiftUI API Documentation</a></p>
+<p>Some properties may be transformed or ignored to achieve the ideal combined result.</p>
+</div>
+<p><em>This is why we recommend avoiding this modifier in most cases. While being very convenient, its opaque heuristic makes your code unpredictable by the reader and will likely result in an "automatic" interface that will necessarily lead to a poor UX.</em></p>
+<h5 id="ignore">.ignore</h5>
+<p><strong><code>.ignore</code></strong> will also create a new accessibility element, also drop its children, but won't get any accessibility attribute for free - you have explicitly write them again.</p>
+<p><strong><em>This is the way we would recommend to do it</em></strong><em>, as it allows to implement thoughtful accessibility attributes.</em></p>
+<h5 id="contain">.contain</h5>
+<p><strong><code>.contain</code></strong> does not compete with <code>.combine</code> and <code>.ignore</code> because it does not serve the same purpose. While it will create a new accessibility element in the tree, their children won't be dropped. As a result, this modifier is only useful to structure navigation and order elements, <a href="https://developer.apple.com/documentation/swiftui/accessibilitychildbehavior/contain#discussion">making sure all the children of the newly created elements are navigated before going to the next accessibility element</a>.</p>
+<p>To get more insights on whether to group elements or not, refer to <a href="C-IDE.html">🎨 Inclusive design 101</a>.</p>
+<h4 id="limits-to-this-approach">Limits to this approach</h4>
+<p>If you follow the guidelines we provided above, your code might look like this:</p>
+<div class="language-swift highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">var</span><span class="w"> </span><span class="nv">body</span><span class="p">:</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="n">View</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">Group</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">        </span><span class="n">NiceView</span><span class="p">()</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="n">VeryNiceView</span><span class="p">()</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="p">.</span><span class="n">accessibilityElement</span><span class="p">(</span><span class="n">children</span><span class="p">:</span><span class="w"> </span><span class="p">.</span><span class="n">ignore</span><span class="p">)</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="p">.</span><span class="n">accessibilityLabel</span><span class="p">(</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;VERY_NICE_LABEL&quot;</span><span class="p">))</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="p">.</span><span class="n">accessibilityHint</span><span class="p">(</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;VERY_NICE_HINT&quot;</span><span class="p">))</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="p">.</span><span class="n">accessibilityAddTraits</span><span class="p">(.</span><span class="n">isButton</span><span class="p">)</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="p">.</span><span class="n">accessibilityAction</span><span class="p">(</span><span class="n">named</span><span class="p">:</span><span class="w"> </span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;VERY_NICE_ACTION&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="bp">print</span><span class="p">(</span><span class="s">&quot;Action performed!&quot;</span><span class="p">)</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="n">SomeOtherView</span><span class="p">()</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="p">.</span><span class="n">accessibilityLabel</span><span class="p">(</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;A11Y&quot;</span><span class="p">))</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="p">.</span><span class="n">accessibilityHint</span><span class="p">(</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;SOME_OTHER_HINT&quot;</span><span class="p">))</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="p">.</span><span class="n">accessibilitySortPriority</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>There are several issues we can find in this implementation:</p>
+<ul>
+<li>The accessibility-related code is hard to find. In bigger and more complex views, it gets scattered all over the view's code.</li>
+<li>If same snippets are likely to be repeated everywhere.</li>
+<li>Yet, consistency across the codebase is not enforced, nor nudged.</li>
+</ul>
+<h3 id="building-a-custom-accessibility-architecture">Building a custom accessibility architecture</h3>
+<p>To address those issues in the <a href="https://olvid.io">Olvid</a> iOS app, the team worked on helpers that facilitate the work of making components and end-user views accessible.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In this section, we will be using for example purposes some code extracts from <a href="https://github.com/olvid-io/olvid-ios">the Olvid iOS client</a>, which is licensed under the <a href="https://github.com/olvid-io/olvid-ios/blob/main/LICENSE">GNU Affero General Public License v3</a>.</p>
+</div>
+<p>The goals were to <strong>facilitate, structure and harmonize</strong> the way accessibility is implemented across the codebase. Based on our needs, here is what we ended up with:</p>
+<ul>
+<li>A protocol requiring to provide accessibility attributes.</li>
+<li>A struct giving those accessibility attributes.</li>
+<li>A view modifier that can be applied on any view conforming to the protocol, applying those accessibility attributes.</li>
+</ul>
+<p>As a result, the code can look like:</p>
+<div class="language-swift highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">private</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="nc">HorizontalListOfUsersViewCell</span><span class="p">:</span><span class="w"> </span><span class="n">View</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="c1">// [...]</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nv">body</span><span class="p">:</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="n">View</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">            </span><span class="n">InternalView</span><span class="p">(</span><span class="n">user</span><span class="p">:</span><span class="w"> </span><span class="n">user</span><span class="p">,</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">                         </span><span class="n">identifiersOfSelectedUsers</span><span class="p">:</span><span class="w"> </span><span class="err">$</span><span class="n">identifiersOfSelectedUsers</span><span class="p">,</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">                         </span><span class="n">profilePicture</span><span class="p">:</span><span class="w"> </span><span class="n">profilePicture</span><span class="p">?.</span><span class="n">image</span><span class="p">,</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">                         </span><span class="n">avatarSize</span><span class="p">:</span><span class="w"> </span><span class="n">avatarSize</span><span class="p">)</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">            </span><span class="p">.</span><span class="n">obvAccessibleComponent</span><span class="p">()</span><span class="w"> </span><span class="c1">// The custom ViewModifier can be applied because the internal view conforms...</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">            </span><span class="c1">// [...]</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="nc">InternalView</span><span class="p">:</span><span class="w"> </span><span class="n">ObvAccessibilityProvidableView</span><span class="w"> </span><span class="cm">/* ...to this protocol... */</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">        </span><span class="c1">// [...]</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nv">accessibilityAttributes</span><span class="p">:</span><span class="w"> </span><span class="n">ObvAccessibility</span><span class="p">.</span><span class="n">ObvAccessibilityAttributes</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// ...which requires to provide this struct.</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">            </span><span class="p">.</span><span class="kd">init</span><span class="p">(</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">                </span><span class="n">label</span><span class="p">:</span><span class="w"> </span><span class="n">user</span><span class="p">?.</span><span class="n">identityDetails</span><span class="p">.</span><span class="n">coreDetails</span><span class="p">.</span><span class="n">getDisplayNameWithStyle</span><span class="p">(.</span><span class="n">firstNameThenLastName</span><span class="p">)</span><span class="w"> </span><span class="p">??</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="p">,</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">                </span><span class="n">value</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="n">localizedInThisBundle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;SELECTED&quot;</span><span class="p">),</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">                </span><span class="n">actions</span><span class="p">:</span><span class="w"> </span><span class="p">[.</span><span class="k">default</span><span class="p">:</span><span class="w"> </span><span class="n">buttonAction</span><span class="p">],</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">                </span><span class="n">hint</span><span class="p">:</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="n">localizedInThisBundle</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;DOUBLE_TAP_TO_REMOVE&quot;</span><span class="p">),</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">                </span><span class="n">traits</span><span class="p">:</span><span class="w"> </span><span class="p">[.</span><span class="n">isButton</span><span class="p">])</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nv">body</span><span class="p">:</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="n">View</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">            </span><span class="c1">// [...]</span>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Now, the accessibility information is easier to find, and the attributes can be applied by a single ViewModifier that encapsulates the grouping guidelines we provided earlier.</p>
+<p>Please note this architecture is not to be seen as the perfect way to go. We simply hope it will inspire you to build your own!</p>
+<h2 id="accessibility-in-uikit">Accessibility in UIKit</h2>
+<p>We won't be covering accessibility in for UIKit in this module as we have very little experience dealing with it. From what we can tell, it is way less operational than SwiftUI at scale but can still help you make dramatic improvements on your app's accessibility. You can checkout this great resource for <a href="https://appt.org/en/docs/ios/samples">UIKit accessibility code</a>. Here is also <a href="https://developer.apple.com/documentation/uikit/accessibility-for-uikit">Apple's documentation.</a></p>
+<div class="admonition tip">
+<p class="admonition-title">If you have the knowledge</p>
+<p>We would be happy to integrate some of your knowledge on UIKit Accessibility to our project. Feel free to <a href="https://github.com/alterity-git/building-inclusive-open-source-software">contribute</a>!</p>
+</div>
+<h2 id="accessibility-inspector">Accessibility Inspector</h2>
+<p>This is a tool that allows you to inspect any accessibility element on your device, whether physical or emulated. It is very useful when developing to get a textual representation of your components' accessibility attributes. It can also perform accessibility audits that are fast but not very insightful.</p>
+<p><img alt="Screenshot of the accessibility inspector inspecting Olvid" src="resources/d-programming-inclusive-and-accessible-software/appleAccessibilityInspector.png" /></p>
+<p><a href="https://developer.apple.com/videos/play/wwdc2019/257">Here is a detailed video presenting the tool</a>.</p>
+<h2 id="informing-users-on-your-apps-accessibility">Informing users on your app's accessibility</h2>
+<p>Once you've done all of this work, you probably want users who value accessibility to know that your app is worth downloading and testing. Apple recently added what they call the <a href="https://developer.apple.com/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels/">Accessibility Nutrition Labels</a> which are essentially a way of telling users which accessibility features you implemented in your app.</p>
+<p>It's also a good idea to indicate to which technologies or disabilities your app is not accessible. If your app is not ready for being accessible to VoiceOver users, being transparent about it will avoid users who rely on it to try your app and get frustrated.</p>
+<h2 id="wrapping-up">Wrapping up</h2>
+<ul>
+<li>Apple provides <strong>powerful tools</strong> for you to achieve great accessibility in your apps.</li>
+<li><strong>Apple's accessibility model is based on elements and attributes</strong>. Providing as many as relevant will help assistive technologies work well with your solution.</li>
+<li><strong>Knowing about the features used by your users is crucial</strong> as it is the first step towards understanding their needs. Some features listed in the module can also be a source of inspiration for you to provide innovative and intuitive way of interacting with your app.</li>
+<li>SwiftUI accessibility leverages the flexibility of view modifiers, which is sometimes paid at the price of code readability and structure. Once you've identified patterns in the way you and your team use Apple accessibility's framework, <strong>you can build helper functions that will facilitate, harmonize and structure accessibility across your codebase.</strong></li>
+<li><strong>Accessibility Nutrition Labels</strong> allow developers to let the users know which accessibility features they can expect when downloading your app.</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<p><a href="https://developer.apple.com/documentation/accessibility/">Accessibility | Apple Developer Documentation</a></p>
+<p><a href="https://appt.org/en/docs/ios">iOS accessibility | Appt</a></p>
+<p><a href="https://github.com/olvid-io/olvid-ios">olvid-io/olvid-ios: Olvid client application for iOS</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="D-ICO.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 👩‍💻 Inclusive code 101">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                👩‍💻 Inclusive code 101
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="D-APQ.html" class="md-footer__link md-footer__link--next" aria-label="Next: 📗 Inclusive programming with Qt">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                📗 Inclusive programming with Qt
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Maxence Vahedi & Page Magnier--Slimani CC BY-SA 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.progress", "navigation.sections", "navigation.footer", "content.tabs.link"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>

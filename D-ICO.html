@@ -1,0 +1,1653 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Accessibility and inclusiveness resources and training modules for open-source applications builders.">
+      
+      
+        <meta name="author" content="Maxence Vahedi & Page Magnier--Slimani">
+      
+      
+        <link rel="canonical" href="https://alterity-git.github.io/building-inclusive-open-source-software/D-ICO.html">
+      
+      
+        <link rel="prev" href="C-IDM.html">
+      
+      
+        <link rel="next" href="D-APL.html">
+      
+      
+      <link rel="icon" href="resources/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>👩‍💻 Inclusive code 101 - Building Inclusive Open Source Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inclusive-code-101" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Building Inclusive Open Source Software" class="md-header__button md-logo" aria-label="Building Inclusive Open Source Software" data-md-component="logo">
+      
+  <img src="resources/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Building Inclusive Open Source Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              👩‍💻 Inclusive code 101
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07zm-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13zm-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87zM19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35zm4.33-2.7 1.15-2.77 2.2 2.54zm1.15-4.96-1.14-2.78 3.34.24zM9.63 18.93l2.77 1.15-2.53 2.19z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="custom-light" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="custom-dark" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/alterity-git/building-inclusive-open-source-software" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alterity-git/building-inclusive-open-source-software
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Building Inclusive Open Source Software" class="md-nav__button md-logo" aria-label="Building Inclusive Open Source Software" data-md-component="logo">
+      
+  <img src="resources/logo.png" alt="logo">
+
+    </a>
+    Building Inclusive Open Source Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/alterity-git/building-inclusive-open-source-software" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alterity-git/building-inclusive-open-source-software
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    What is accessibility?
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            What is accessibility?
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-ASP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🚀 Accessibility starting point
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-FNA.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🫳🏿 Feeling the need for accessibility
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-AIE.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    👩‍🦽 Accessibility & Ableism
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-BCT.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🗺️ Brief cartography of today’s accessibility landscape
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-ITD.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🔧 Assistive technologies - Desktop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-ATM.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📲 Assistive technologies - Mobile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    From accessibility to inclusiveness
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            From accessibility to inclusiveness
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-INO.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🔭 Inclusiveness needs overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-WDU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🫂 We are all disabled and unique
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-DSU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🤺 Developer stance & user collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-IAP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ⚗️ Bring inclusiveness and accessibility to your pipeline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Designing inclusive and accessible software
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Designing inclusive and accessible software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="C-IDE.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨 Inclusive design 101
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="C-IDD.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🖥️ Inclusive design for Desktop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="C-IDM.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📱 Inclusive design for Mobile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Programming inclusive and accessible software
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Programming inclusive and accessible software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    👩‍💻 Inclusive code 101
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="D-ICO.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    👩‍💻 Inclusive code 101
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to use?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-mindset-accessible-code-is-good-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development mindset : Accessible code is good code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development mindset : Accessible code is good code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-components-and-accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom components and accessibility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-bad-accessibility-says-about-our-code-a-few-concrete-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      What bad accessibility says about our code: a few concrete examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focus-and-explicit-key-navigation-choose-the-right-tool-at-the-right-time-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Focus and explicit key navigation, choose the right tool at the right time (Desktop)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fading-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fading components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-can-be-automated" class="md-nav__link">
+    <span class="md-ellipsis">
+      What can be automated?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessible-apis-back-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessible API’s &amp; back-end
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-APL.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🍎 Inclusive features and programming for Apple platforms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-APQ.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📗 Inclusive programming with Qt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-AND.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🤖 Inclusive features and programming for Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-JFX.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ☕️ Inclusive programming with JavaFX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-IWP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🕸️ Inclusive web programming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    To conclude and go further
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            To conclude and go further
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="E-CBU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎯 Conclusion, bibliography and useful resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="E-WYG.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🏃🏽‍♀️‍➡️ Where YOU go next!
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="E-CLS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    💬 Collective sharing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to use?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-mindset-accessible-code-is-good-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development mindset : Accessible code is good code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development mindset : Accessible code is good code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-components-and-accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom components and accessibility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-bad-accessibility-says-about-our-code-a-few-concrete-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      What bad accessibility says about our code: a few concrete examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focus-and-explicit-key-navigation-choose-the-right-tool-at-the-right-time-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Focus and explicit key navigation, choose the right tool at the right time (Desktop)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fading-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fading components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-can-be-automated" class="md-nav__link">
+    <span class="md-ellipsis">
+      What can be automated?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessible-apis-back-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessible API’s &amp; back-end
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="inclusive-code-101">👩‍💻 Inclusive code 101</h1>
+<div class="admonition info">
+<p class="admonition-title">In this module</p>
+<p>This module provides general information needed for building accessible code on
+any platform or language.</p>
+</div>
+<p><strong>⛳️ Section</strong>: <em>D. Programming inclusive and accessible software</em></p>
+<p><strong>👥 Audience</strong>: Developers</p>
+<p><strong>⏱️ Duration</strong>: 15'</p>
+<p><strong>📚 Prerequisites</strong>: <a href="B-WDU.html">🫂 We are all disabled and unique : accessibility, plurality and intersectionality</a></p>
+<hr />
+<h2 id="when-to-use">When to use?</h2>
+<p>This module should be used with trainees before diving into the accessibility specificities of their platform, language or framework. It aims at settling good practices and avoiding common accessibility pitfalls.</p>
+<h2 id="development-mindset-accessible-code-is-good-code">Development mindset : Accessible code is good code</h2>
+<p>As we will see in this section, bad accessibility can often be a symptom of flawed code. That’s good news! It means that fixing it often only requires good code practices.</p>
+<hr />
+<h3 id="custom-components-and-accessibility">Custom components and accessibility</h3>
+<p>Many applicative frameworks come packed with standards components (like labels, buttons, timers, etc.). To put it simply, the main takeaway of this section would be:</p>
+<blockquote>
+<p><strong>⛔ Don't reinvent</strong> (or program in our case) <strong>the wheel!</strong> (please)</p>
+</blockquote>
+<p>You code can be good but will likely never be as robust as one iterated upon by a community of developers or a big company. Therefore, before implementing anything, check rigorously that your framework (or a library) doesn’t provide a tool that would meet most of your needs.</p>
+<p>Frameworks often have unified and often automated ways of handling accessibility with key navigation, focus and label generation. Therefore, building complex custom components will very frequently (not to say almost always) break accessibility handling if no more work is done. Therefore, try to limit the complexity of your UI objects, document them properly and when trying to fix an accessibility issue, consider taking the hard way by refactoring the component. Your whole code will actually be better.</p>
+<p>For a more concrete example, on the left you can see a custom combo-box component, deeply broken from an accessibility standpoint. On the right, you can see a native Qt combo-box, more feature-full -aesthetics aside- and working fine with a screen reader and Keyboard navigation without necessitating any intervention.</p>
+<div style="display: flex; justify-content: space-between;">
+    <div style="flex: 1; margin-right: 10px;">
+        <img src="../resources/d-programming-inclusive-and-accessible-software/jamiComboBox.png" alt="Custom combo box">
+    </div>
+    <div style="flex: 1; margin-left: 10px;">
+        <img src="../resources/d-programming-inclusive-and-accessible-software/qtComboBox.png" alt="Native Qt combo-box">
+    </div>
+</div>
+
+<p>We believe that there are very few reasons not to use the second one.</p>
+<p>If however you decide to make a custom component, make sure you implement extensively the accessibility APIs provided by your framework. This generally requires a deeper understanding of how accessibility is handled by your platform, but can be done well though it will likely require some maintenance over time.</p>
+<hr />
+<h3 id="what-bad-accessibility-says-about-our-code-a-few-concrete-examples">What bad accessibility says about our code: a few concrete examples</h3>
+<p>Accessibility and inclusiveness in programming have one key benefit: making you think twice about your code. As said previously, stumbling into an accessibility issue might mean that you could be doing something better in a different way.</p>
+<p>Let’s investigate that by taking a look at the most obviously broken component in Jami: the username info box tooltip (the small 'i' on the right).</p>
+<p><img alt="Screenshot of the Jami account creation page showcasing the discussed tooltip" src="resources/d-programming-inclusive-and-accessible-software/jamiToolTip.png" /></p>
+<p>It’s an “info box” (as called in the code), but a screen reader will handle it as a push button. That seems weird, as this is used as a tooltip, not a button allowing an action. Additionally, it doesn’t react well when selecting and unselecting the username text edit.</p>
+<p>That is because in the code, this component is indeed a button. That goes without saying that it’s not a good way of implementing it, and as a result, the corresponding code is very extensive (more than 80 lines of code)! This is the cause of both accessibility and the selection issues. While it technically works, there are plenty of ways to use default components for a better result. In this case, broken accessibility indicate bad implementation choices.</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nl">icon</span><span class="p">:</span><span class="w"> </span><span class="n">PushButton</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nl">id</span><span class="p">:</span><span class="w"> </span><span class="n">infoBox</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nl">z</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nl">normalColor</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;transparent&quot;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="c1">// ...</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nl">checkable</span><span class="p">:</span><span class="w"> </span><span class="nb">true</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="nl">onCheckedChanged</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="n">textBoxinfo</span><span class="p">.</span><span class="n">visible</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="n">textBoxinfo</span><span class="p">.</span><span class="n">visible</span><span class="p">;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nl">preferredSize</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="c1">// ...</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Another example would be the account selection list in Jami. It was not possible to navigate between the different items using the keyboard arrows making it non-usable from an accessibility standpoint.</p>
+<p align="center">
+    <img src="../resources/d-programming-inclusive-and-accessible-software/jamiAccountList.png" alt="Picture of the account list in Jami showing 4 different accounts." width="60%">
+</p>
+
+<p>That’s an unexpected behavior as the best ListView Qt component (which our custom component is based on) supports this navigation method. A quick inspection of the code revealed those lines:</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">Keys</span><span class="p">.</span><span class="n">onUpPressed</span><span class="o">:</span><span class="w"> </span><span class="n">verticalScrollBar</span><span class="p">.</span><span class="n">decrease</span><span class="p">()</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Keys</span><span class="p">.</span><span class="n">onDownPressed</span><span class="o">:</span><span class="w"> </span><span class="n">verticalScrollBar</span><span class="p">.</span><span class="n">increase</span><span class="p">()</span>
+</span></code></pre></div>
+<p>By reimplementing a scroll feature and binding it to the arrows key, we effectively broke the base behavior of the component. Here, broken accessibility showcase flawed design as the expected behavior of the component hasn’t been thought all the way through.</p>
+<p>In this case, the fix was rather simple: use the base component rather the custom one.</p>
+<p>And when you don't have the choice to work with custom components, remember to pay close attention to your framework's accessibility APIs and guidelines to make sure your components can blend in.</p>
+<h3 id="focus-and-explicit-key-navigation-choose-the-right-tool-at-the-right-time-desktop">Focus and explicit key navigation, choose the right tool at the right time (Desktop)</h3>
+<p>In order to implement alternative navigation in your app (keyboard, VoiceOver, talkback, vocal command, etc), on desktop, they are two main way of doing it: focus and explicit key navigation. By default, your framework will try to predict the order in which you would want to move between objects by making all focusable elements accessible through alternative navigation. This will work mostly well on basic components.</p>
+<p>It happens very often that this flow of navigation breaks for numerous reasons, a pop-up could have appeared, new UI elements might be visible or maybe the elements are complex (sub-tabs in settings for example)</p>
+<p>As stated previously, all interactive components must be accessible:</p>
+<p>If one is simply not reachable, your first strategy should be to try and make it focusable so that your framework can automatically incorporate it in its navigation.</p>
+<p>Often, that might not be enough. The element could be reachable but not in any practical way. For example in a chat view, keyboard navigation could automatically send you to the first message loaded, forcing the user to pass through the whole conversation before accessing the message bar.</p>
+<p>In those situations, you could want to use explicit keyboard navigation, to force a component to send you to another component that you has chosen. This is the most flexible but more time expensive approach. An example in pseudo code would be:</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">KeyNavigation</span><span class="p">.</span><span class="n">tab</span><span class="o">:</span><span class="w"> </span><span class="n">isTheExtendedViewLoaded</span><span class="p">()</span><span class="o">?</span><span class="w"> </span><span class="n">settingsButton</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">moreInfosButton</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">KeyNavigation</span><span class="p">.</span><span class="n">backtab</span><span class="o">:</span><span class="w"> </span><span class="n">newAccountButton</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">KeyNavigation</span><span class="p">.</span><span class="n">up</span><span class="o">:</span><span class="w"> </span><span class="n">isTheExtendedViewLoaded</span><span class="p">()</span><span class="o">?</span><span class="w"> </span><span class="n">fromBackupButton</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">alreadyHaveAccountButton</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">KeyNavigation</span><span class="p">.</span><span class="n">down</span><span class="o">:</span><span class="w"> </span><span class="n">KeyNavigation</span><span class="p">.</span><span class="n">tab</span>
+</span></code></pre></div>
+<hr />
+<h3 id="fading-components">Fading components</h3>
+<p>Some interface components have fade behaviors. For example, call action bars typically contextually fade in and out.</p>
+<p><img alt="A screenshot of the call action bar during a call providing buttons to hang-up, change audio settings, share screen, etc." src="resources/d-programming-inclusive-and-accessible-software/callbarscreenshot.png" /></p>
+<p>In those situations you would want to implement a custom logic specific to those fading components:</p>
+<ol>
+<li>Any navigation key press should make the fading component visible again</li>
+<li>The component shouldn't fade if it is focused, or if one of its children items is.(for example a button inside the call action bar)</li>
+<li>The selected element should be clearly identifiable by the user</li>
+</ol>
+<p>In the screenshot below, you can see the example of the call action bar of <a href="https://jami.net/">Jami</a> which clearly communicates the selection of one of its elements.</p>
+<p><img alt="A screenshot of the same call action bar during a call but selected using keyboard focus. Their is a blue outline around the Speaker button, indicating focus." src="resources/d-programming-inclusive-and-accessible-software/callbarfocusedscreenshot.png" /></p>
+<h2 id="development-process">Development process</h2>
+<h3 id="what-can-be-automated">What can be automated?</h3>
+<p>What can be automated is a tricky question. As we stated previously, inclusiveness is a process and the need for an intersectional perspective make it impossible to think ahead every need that diverse user with complex background and set of ability might have.</p>
+<p><strong>Therefore, no amount of checklists and tests in CI can replace feedback and testing from diverse user groups.</strong></p>
+<p>That said, a few things can be set to try and automatically detect as much issue as possible. If your app is a web-view, this will be very easy and convenient. You can go to the <a href="A-ITD.html">🔧 Assistive technologies : Desktop</a> module for more information.</p>
+<p>If you app is native, you can set-up your CI to detect missing accessibility labels on focusable elements and setup a test that navigate through all of the elements of a view using the keyboard, checking that none of them wasn’t reached.</p>
+<p>Some frameworks (including SwiftUI and Jetpack Compose) provide ways of automating UI tests that check accessibility.</p>
+<p>You can also use a template of a checklist containing the main elements to be sounded and share it with your team. We provide you, our own accessibility checklist template. Feel free to iterate upon it and to propose your enhancements <a href="https://github.com/alterity-git/building-inclusive-open-source-software">in this repository</a>.</p>
+<p>Remember: this <strong>should not</strong> be seen as a way to make your UI accessible, but rather to be sure you commit won't break any existing accessibility that was implemented. For new features, it is essential to design the UI with accessibility in mind from the very start.</p>
+<p><img alt="Diagram showing an &quot;A very basic accessibility checklist not to break anything when committing&quot;. This diagram is available in text format further down this page." src="resources/d-programming-inclusive-and-accessible-software/inclusivenessChecklist.png" /></p>
+<p><strong>The diagram in text format:</strong></p>
+<p>Did you change/create a UI component?</p>
+<ul>
+<li>If no: skip to the question about data manipulation</li>
+</ul>
+<p>Can you access it in a practical way with your keyboard or VoiceOver/TalkBack alone?</p>
+<ul>
+<li>If no: Fix it! All elements should be accessible without a mouse. Most users would expect the navigation to take place using TAB and BACKTAB. Arrows are also useful inside of lists. A top bar would typically be accessible with ALT. Shortcuts can make this navigation smoother.</li>
+</ul>
+<p>Are all information and labels properly transcribed using a screen reader?</p>
+<ul>
+<li>If no: Fix it! You can test this using your system screen reader on the settings or NVDA on Windows. You can then navigate through the app and hear if the labels are relevant. All information like the state of a component or wether it's selected must be transcribed. Expect to provide in your code:<ul>
+<li>A name for the element</li>
+<li>A description of its effect</li>
+<li>its role (for example static text or button)</li>
+</ul>
+</li>
+</ul>
+<p>Does it work with different text scaling?</p>
+<ul>
+<li>If no: Fix it! Most operating systems have text scaling options.  Some apps have their own too. Check if your UI isn't cropped by changing the size of the font. Try it for smaller and for bigger text.</li>
+</ul>
+<p>Did you affect another component?</p>
+<ul>
+<li>If yes: repeat the previous questions for the other component</li>
+</ul>
+<p>Is the data manipulated in your code easily accessible from UI components?</p>
+<ul>
+<li>If no: Make functions in  your API that allow  UI components to access relevant information. For example, the time of a message is often in a separated component from the message itself but the accessibility label of this message could need access to the date where it was sent.</li>
+</ul>
+<p>Does it work well for all languages? (including non UTF8 and RTL ones )?</p>
+<ul>
+<li>If no: Fix it! Some languages like Greek are often not encoded in UTF8. Be sure to account for them. Also check that RTL (right to left) languages like Arabic displays correctly. To test this, you can use parts of local newspapers as placeholders!</li>
+</ul>
+<p>Does it has elements showing cultural significance?</p>
+<ul>
+<li>If no: You are good to go!</li>
+<li>
+<p>If yes: Does it enable people from various cultural background to feel represented?</p>
+<ul>
+<li>
+<p>If you for no: Fix it! For example, a picture of a cheeseburger or a pizza as an illustration for food will only enable a certain demographic of users to feel represented. Having separate field for first and last name will not allow users from certain cultures to use the app properly. The only way to try and make our application more inclusive is to show it to people from varied background ans ask them about their needs to use it properly.</p>
+</li>
+<li>
+<p>If you hope yes: You are good to go!</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="accessible-apis-back-end">Accessible API’s &amp; back-end</h3>
+<p>On the back-end too, accessible code is good code. A well-designed architecture or API will be more understandable for everyone to understand and iterate on, particularly for open source software.</p>
+<p>Here are some key elements to making your API accessible:</p>
+<ul>
+<li>When choosing a name for some object, make sure to apply those principles:<ul>
+<li>Avoid abbreviations, which can be difficult to understand to some people due to language, screen reader use, or cognitive disabilities.</li>
+<li>Make sure the name is as clear and complete as possible.</li>
+</ul>
+</li>
+<li>Regarding documentation and code commenting, remember to:<ul>
+<li>Write clear sentences with simple language that will enable everyone to understand the purpose of your code.</li>
+<li>If your documentation is built to HTML, check with <a href="https://wave.webaim.org/">the WAVE tool</a> that it is WCAG-compliant.</li>
+</ul>
+</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Accessible programming can be overwhelming, mostly due to the lack of resources for native apps, but with the right tools it’s absolutely bearable.
+Remember that accessibility issues in your code often hide underlying issues. Also remember to set up proper workflows and tests.</p>
+<p>From here, you might want to take a look at some of our modules about inclusive programming for different platforms, ecosystems and frameworks.</p>
+<h2 id="resources">Resources</h2>
+<p><a href="resources/d-programming-inclusive-and-accessible-software/quickInclusivenessCheck.excalidraw">QuickInclusivenessCheck.excalidraw</a></p>
+<p><a href="https://wave.webaim.org/">WAVE Accessibility tool</a></p>
+<h2 id="sources">Sources</h2>
+<p><a href="https://accessibility.deque.com/agile-accessibility-handbook">Barrell Dylan. <em>Agile Accessibility Handbook</em></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="C-IDM.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 📱 Inclusive design for Mobile">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                📱 Inclusive design for Mobile
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="D-APL.html" class="md-footer__link md-footer__link--next" aria-label="Next: 🍎 Inclusive features and programming for Apple platforms">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                🍎 Inclusive features and programming for Apple platforms
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Maxence Vahedi & Page Magnier--Slimani CC BY-SA 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.progress", "navigation.sections", "navigation.footer", "content.tabs.link"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>

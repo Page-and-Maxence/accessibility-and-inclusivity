@@ -1,0 +1,1882 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Accessibility and inclusiveness resources and training modules for open-source applications builders.">
+      
+      
+        <meta name="author" content="Maxence Vahedi & Page Magnier--Slimani">
+      
+      
+        <link rel="canonical" href="https://alterity-git.github.io/building-inclusive-open-source-software/C-IDE.html">
+      
+      
+        <link rel="prev" href="B-IAP.html">
+      
+      
+        <link rel="next" href="C-IDD.html">
+      
+      
+      <link rel="icon" href="resources/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>🎨 Inclusive design 101 - Building Inclusive Open Source Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inclusive-design-101" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Building Inclusive Open Source Software" class="md-header__button md-logo" aria-label="Building Inclusive Open Source Software" data-md-component="logo">
+      
+  <img src="resources/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Building Inclusive Open Source Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🎨 Inclusive design 101
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07zm-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13zm-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87zM19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35zm4.33-2.7 1.15-2.77 2.2 2.54zm1.15-4.96-1.14-2.78 3.34.24zM9.63 18.93l2.77 1.15-2.53 2.19z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="custom-light" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="custom-dark" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/alterity-git/building-inclusive-open-source-software" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alterity-git/building-inclusive-open-source-software
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Building Inclusive Open Source Software" class="md-nav__button md-logo" aria-label="Building Inclusive Open Source Software" data-md-component="logo">
+      
+  <img src="resources/logo.png" alt="logo">
+
+    </a>
+    Building Inclusive Open Source Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/alterity-git/building-inclusive-open-source-software" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    alterity-git/building-inclusive-open-source-software
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    What is accessibility?
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            What is accessibility?
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-ASP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🚀 Accessibility starting point
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-FNA.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🫳🏿 Feeling the need for accessibility
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-AIE.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    👩‍🦽 Accessibility & Ableism
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-BCT.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🗺️ Brief cartography of today’s accessibility landscape
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-ITD.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🔧 Assistive technologies - Desktop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="A-ATM.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📲 Assistive technologies - Mobile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    From accessibility to inclusiveness
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            From accessibility to inclusiveness
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-INO.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🔭 Inclusiveness needs overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-WDU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🫂 We are all disabled and unique
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-DSU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🤺 Developer stance & user collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="B-IAP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ⚗️ Bring inclusiveness and accessibility to your pipeline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Designing inclusive and accessible software
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Designing inclusive and accessible software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    🎨 Inclusive design 101
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="C-IDE.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨 Inclusive design 101
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to use?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-inclusive-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is an inclusive app?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#designing-for-inclusiveness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designing for inclusiveness
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-inclusive-user-interface-iui" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is an Inclusive User Interface (IUI)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#designing-an-iui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designing an IUI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Designing an IUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-colors-are-contrasted" class="md-nav__link">
+    <span class="md-ellipsis">
+      The colors are contrasted
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-colors-are-not-necessary-to-understand-the-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      The colors are not necessary to understand the UI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-layout-is-responsive-to-custom-font-sizes" class="md-nav__link">
+    <span class="md-ellipsis">
+      The layout is responsive to custom font sizes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-text-is-naturally-justified" class="md-nav__link">
+    <span class="md-ellipsis">
+      The text is naturally justified
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-interactions-do-not-require-physical-andor-motor-abilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      The interactions do not require physical and/or motor abilities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-content-can-be-accessed-using-assistive-technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      The content can be accessed using assistive technologies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ui-is-simple-and-intuitive" class="md-nav__link">
+    <span class="md-ellipsis">
+      The UI is simple and intuitive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ui-has-options-to-prevent-motion-sickness" class="md-nav__link">
+    <span class="md-ellipsis">
+      The UI has options to prevent motion sickness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ui-adapts-well-to-other-cultures" class="md-nav__link">
+    <span class="md-ellipsis">
+      The UI adapts well to other cultures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users-age-gender-identity-sexuality-ethnicity-financial-situation-etc-are-not-assumed" class="md-nav__link">
+    <span class="md-ellipsis">
+      User’s age, gender identity, sexuality, ethnicity, financial situation, etc. are not assumed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ui-takes-care-of-the-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      The UI takes care of the user
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-creative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting creative
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communicating-inclusive-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communicating inclusive design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activity-designing-and-iui-on-a-whiteboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity: designing and IUI on a whiteboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wrapping-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wrapping up
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="C-IDD.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🖥️ Inclusive design for Desktop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="C-IDM.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📱 Inclusive design for Mobile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Programming inclusive and accessible software
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Programming inclusive and accessible software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-ICO.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    👩‍💻 Inclusive code 101
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-APL.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🍎 Inclusive features and programming for Apple platforms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-APQ.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📗 Inclusive programming with Qt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-AND.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🤖 Inclusive features and programming for Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-JFX.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ☕️ Inclusive programming with JavaFX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="D-IWP.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🕸️ Inclusive web programming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    To conclude and go further
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            To conclude and go further
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="E-CBU.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎯 Conclusion, bibliography and useful resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="E-WYG.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🏃🏽‍♀️‍➡️ Where YOU go next!
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="E-CLS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    💬 Collective sharing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to use?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-inclusive-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is an inclusive app?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#designing-for-inclusiveness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designing for inclusiveness
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-inclusive-user-interface-iui" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is an Inclusive User Interface (IUI)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#designing-an-iui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Designing an IUI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Designing an IUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-colors-are-contrasted" class="md-nav__link">
+    <span class="md-ellipsis">
+      The colors are contrasted
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-colors-are-not-necessary-to-understand-the-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      The colors are not necessary to understand the UI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-layout-is-responsive-to-custom-font-sizes" class="md-nav__link">
+    <span class="md-ellipsis">
+      The layout is responsive to custom font sizes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-text-is-naturally-justified" class="md-nav__link">
+    <span class="md-ellipsis">
+      The text is naturally justified
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-interactions-do-not-require-physical-andor-motor-abilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      The interactions do not require physical and/or motor abilities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-content-can-be-accessed-using-assistive-technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      The content can be accessed using assistive technologies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ui-is-simple-and-intuitive" class="md-nav__link">
+    <span class="md-ellipsis">
+      The UI is simple and intuitive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ui-has-options-to-prevent-motion-sickness" class="md-nav__link">
+    <span class="md-ellipsis">
+      The UI has options to prevent motion sickness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ui-adapts-well-to-other-cultures" class="md-nav__link">
+    <span class="md-ellipsis">
+      The UI adapts well to other cultures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users-age-gender-identity-sexuality-ethnicity-financial-situation-etc-are-not-assumed" class="md-nav__link">
+    <span class="md-ellipsis">
+      User’s age, gender identity, sexuality, ethnicity, financial situation, etc. are not assumed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ui-takes-care-of-the-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      The UI takes care of the user
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-creative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting creative
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communicating-inclusive-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communicating inclusive design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activity-designing-and-iui-on-a-whiteboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity: designing and IUI on a whiteboard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wrapping-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wrapping up
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="inclusive-design-101">🎨 Inclusive design 101</h1>
+<div class="admonition info">
+<p class="admonition-title">In this module</p>
+<p>This module aims at giving accessibility and inclusiveness essentials for app
+design.</p>
+</div>
+<p><strong>⛳️ Section</strong>: <em>C. Designing inclusive and accessible software</em></p>
+<p><strong>👥 Audience</strong>: Designers</p>
+<p><strong>⏱️ Duration</strong>: 30'</p>
+<p><strong>📚 Prerequisites</strong>: <a href="B-WDU.html">🫂 We are all disabled and unique</a></p>
+<hr />
+<h2 id="when-to-use">When to use?</h2>
+<p>This module should be used with trainees who are in position of making design decisions for the product they are working on. It is mostly intended for product designers and managers, but it is relevant in some scenarios to also include developers, especially for smaller teams.</p>
+<h2 id="what-is-an-inclusive-app">What is an inclusive app?</h2>
+<p>Using the <a href="https://dictionary.cambridge.org/dictionary/english/inclusiveness">Cambridge dictionary's definition</a>, we defined inclusiveness as <strong>the quality of including many different types of people and treating them all fairly and equally</strong>. From there, we have to ask ourselves: what is an inclusive app?</p>
+<p>Put simply, we can define an inclusive application as one that can not only be used completely, comfortably and safely by all users, but also in which they can all thrive, feel welcome and express themselves.</p>
+<p>It is thus crucial for designers and product leads to always keep in mind that the features, contents and interfaces they design won’t be seen, understood, felt or interacted the same by users, depending on the plural and dynamic human characteristics that structure their representations and interactions with their environment.</p>
+<p>Making an inclusive app is thus taking care of everyone, including minorities.</p>
+<p>For every feature, every interface, every content that you are building, always ask yourself: is this element inclusive? Are there human characteristics that could prevent a user from understanding, interacting, or even feeling well with the provided content?</p>
+<p>As seen in <a href="B-INO.html">🔭 Inclusiveness needs overview</a>, here is a <em>non-exhaustive</em> list of human characteristics to keep in mind in order to include as many people as possible:</p>
+<ul>
+<li>Age</li>
+<li>Culture</li>
+<li>Digital literacy</li>
+<li>Education</li>
+<li>Ethnicity</li>
+<li>Gender, gender identity</li>
+<li>Historical context</li>
+<li>Language</li>
+<li>Mental health</li>
+<li>Nationality</li>
+<li>Physical <em>and</em> cognitive (dis)abilities</li>
+<li>Sexuality</li>
+<li>Socio-economic context</li>
+</ul>
+<p>Though these categories can be useful to get an idea of common characteristics often leading to discrimination, we should not see them as a checklist of requirements to be accessible.</p>
+<p>Moreover, human experiences are complex and evolving as they always emerge from intersections of those characteristics.</p>
+<p>Consequently, building an inclusive app is all about staying up to date and <em>actively</em> open to feedback, knowing that we can never reach <em>perfect</em> inclusiveness while doing our best to get there.</p>
+<h2 id="designing-for-inclusiveness">Designing <em>for</em> inclusiveness</h2>
+<p>While implementation plays an important role in the inclusiveness, and especially the accessibility of applications, the designers and product leads hold an important responsibility in the process of building an experience that will resonate and be welcoming to the widest range of users possible.</p>
+<p>Product design documents, including specifications, user stories and prototypes act as the team’s compass for delivering awesome products. That is why having inclusiveness in mind from the design is absolutely essential. You don’t ever have to “make this feature accessible” if it is built from the ground up with inclusiveness in mind.</p>
+<p><img alt="Picture in black of white of cars driving under a bridge" src="resources/c-designing-inclusive-and-accessible-software/bridge.png" /></p>
+<p>You can see on this picture a bridge that, at first, might seem ordinary. Can you guess what’s wrong with it? In <a href="https://faculty.cc.gatech.edu/~beki/cs4001/Winner.pdf"><em>Do artifacts have politics?</em></a>, Langdon Winner explains that those bridges on Long Island were built low, so that buses were too high to pass them. Therefore, people who did not have a car - the least wealthy, and especially African-Americans - were denied access to the parkway to the public beaches. A technical segregation.</p>
+<p>And the same goes with software: if a messaging app denies access to some features to groups of users, it excludes them by preventing them to connect.</p>
+<p>Designers can have a great impact on the inclusiveness of their product. By keeping in mind that their design choices always impact someone somewhere, and likely whole communities - or intersection of them - it is possible to shape tools that strive to respect and acknowledge diversity, which is as the core of humanity and <strong>empathetic design</strong>.</p>
+<h2 id="what-is-an-inclusive-user-interface-iui">What is an Inclusive User Interface (IUI)?</h2>
+<p>An important part of making an app inclusive is to make the UI as accessible to the widest range of people as possible.</p>
+<p>As we said earlier, we ideally don’t “make an interface accessible”. Rather, we design interfaces to be accessible, so that they support as many ways as possible of interacting with your app.</p>
+<p>Alternative, underlying UIs that are built for “disabled” people are often referred to as Accessible User Interfaces (AUI), sometimes as accessibility tree. At first, this concept seems very useful, because thinking of accessibility this way pushes us to make intended and meaningful design choices for how our apps should be accessed using various assistive technologies, font sizes, settings, <em>etc</em>, and to think of accessibility with a wider approach than just adding labels to buttons. It’s about designing a whole new UI - an AUI, separate from the one most users will use.</p>
+<p>That said, from our perspective, thinking UI and AUI as two distinct interfaces does not make sense, because:</p>
+<ul>
+<li>Most users never access an app using only the UI or the AUI. For example, someone who can see but cannot touch the screen might use a switch as input but still use the visual interface to perceive the content. Moreover, many people considering themselves as “able-bodied” still use some accessibility features on their devices - like custom font sizes or accessibility gestures used by power users.</li>
+<li>As seen in We are all disabled and unique: accessibility, plurality and intersectionality, thinking of users as people working with various sets of abilities rather than belonging to one of the “disabled” or “able-bodied” categories better reflects the wide range of experiences you are inevitably creating when building your app.</li>
+<li>AUI as a concept completely forgets inclusiveness and intersectionality, as it draws a strict line between the “able-bodied” and the “disabled”.</li>
+<li>AUI can also create a pitfall, pushing developers to create the UI first, and then deriving an AUI from it, which makes the concept unhelpful.</li>
+</ul>
+<p>We thus prefer to think an inclusive user interface (IUI) as a whole UI that maximizes the different ways it can be interacted with, in order to allow the greatest variety of particular experiences and to satisfy as many needs as possible.</p>
+<figure>
+   <img alt="The first half of the drawing represents two rectangles, representing respectively a UI and an AUI. Circles representing the “able-bodied users” are pointing to the UI with an arrow. Diamonds representing the “disabled users” are pointing to the AUI with an arrow.
+    The second half represents different shapes representing the diversity of users, pointing to the same IUI which is made by overlaying many UIs, regrouped as one." src="resources/c-designing-inclusive-and-accessible-software/iui.png" width="700" />
+</figure>
+<p>From a designer’s perspective, this means your interface should embed a wide set of equal ways of interacting with your app.</p>
+<p>In <a href="https://doi.org/10.1007/978-1-4842-5814-9">his book</a>, Rob Whitaker cites The Paciello Group who "helped define the seven principals of inclusive design" which you can find a very valuable detailed explanations and examples <a href="https://inclusivedesignprinciples.info/">here</a>. From that same website, here is a short definition of each principle:</p>
+<ul>
+<li><strong>Provide comparable experience</strong>: Ensure your interface provides a comparable experience for all so people can accomplish tasks in a way that suits their needs without undermining the quality of the content.</li>
+<li><strong>Consider situation</strong>: People use your interface in different situations. Make sure your interface delivers a valuable experience to people regardless of their circumstances.</li>
+<li><strong>Be consistent</strong>: Use familiar conventions and apply them consistently.</li>
+<li><strong>Give control</strong>: Ensure people are in control. People should be able to access and interact with content in their preferred way.</li>
+<li><strong>Offer choice</strong>: Consider providing different ways for people to complete tasks, especially those that are complex or non standard.</li>
+<li><strong>Prioritize content</strong>: Help users focus on core tasks, features, and information by prioritizing them within the content and layout.</li>
+</ul>
+<p><img alt="Illustration of each design principle described above from the Barclays Access Team. CC-BY-SA." src="resources/c-designing-inclusive-and-accessible-software/barclays-inclusive-design-principles.png" /></p>
+<h2 id="designing-an-iui">Designing an IUI</h2>
+<p>Now, how do you concretely make an IUI?</p>
+<p>It is important to know that there is no <em>unique</em> way of designing inclusive interfaces, and that it is a slow and continuous work, rather than a one-time effort. Inclusiveness recommendations can never be exhaustive.</p>
+<p>With that said, here is a non-exhaustive list to start with to make your app more inclusive:</p>
+<h3 id="the-colors-are-contrasted">The colors are contrasted</h3>
+<p>The most common and easiest to apply advice that is given to designer is to make sure the colors they use are contrasted. This is important not only for people who are colorblind or use a screen filter, but also to guarantee readability on as many screens and conditions as possible. Many tools like <a href="https://www.figma.com/community/plugin/748533339900865323/contrast">Figma plug-ins</a> or <a href="https://www.figma.com/color-contrast-checker/?background=ffffff&amp;foreground=b50202">websites</a> can help you check if your colors are well contrasted, or even look for contrast errors in your designs.</p>
+<figure>
+    <img alt="Two sample texts with different fill and background colors, showing one example of good contrast, and one of bad constrast." src="resources/c-designing-inclusive-and-accessible-software/contrast.png" width="500" />
+</figure>
+<h3 id="the-colors-are-not-necessary-to-understand-the-ui">The colors are not necessary to understand the UI</h3>
+<p>Colors are a great way to quickly convey information. Nevertheless, some people can’t or prefer not to rely on colors to identify content. Consequently, informations given by the UI should never only be conveyed through colors. For example, to indicate success of an operation using a green circle is not accessible. Rather, consider using a pictogram that will also be understandable without needing to see colors.</p>
+<h3 id="the-layout-is-responsive-to-custom-font-sizes">The layout is responsive to custom font sizes</h3>
+<p>Some people need or prefer having on their devices custom (typically bigger) font sizes. When applications are not designed or implemented with this adaptability in mind, content can be hidden and the app can become unusable.</p>
+<p>There usually is not pre-made answer on how to adapt the UI, but the issue can typically be solved by working on an alternate layout. For example, a common fix for cropped content (especially text) is to conditionally replace de horizontal stacks by vertical stacks, saving horizontal room for the text.</p>
+<figure>
+    <img alt="Two iPhones emulators with an information icon and a text with a large font. On the first phone, the layout is horizontal, and the text is cropped. On the second phone, the layout is vertical and the text is fully displayed." src="resources/c-designing-inclusive-and-accessible-software/bigfont.png" width="600" />
+</figure>
+<p>A lot of implementation frameworks provide easy ways to set a preferred size for an element, providing adaptation for scaling change.</p>
+<h3 id="the-text-is-naturally-justified">The text is naturally justified</h3>
+<p>Making sure your text is naturally justified (to the left or to the right depending on your language) is important for two reasons:
+- Users relying on a magnifier tool to read can miss text that doesn't start on the natural side of the screen.
+- Full justification makes it harder read for some people with cognitive disabilities.</p>
+<h3 id="the-interactions-do-not-require-physical-andor-motor-abilities">The interactions do not require physical and/or motor abilities</h3>
+<p>Here are some elements to keep in mind to achieve this milestone:</p>
+<ul>
+<li><strong>Timeouts</strong> should be avoided as often as possible.</li>
+<li>Providing <strong>shortcuts</strong> (whether they are through keyboard or other accessibility APIs depending on the platform) can make the interface faster and easier to use.</li>
+<li><strong>Error tolerance</strong> is also very important, as people with tremors have a higher risk of mistapping or misclicking elements. In general, and particularly for destructive actions, asking for confirmation or allowing for cancellation is very important.</li>
+<li>Preventing confidential elements to appear on the screen spontaneously is crucial to <strong>protect the privacy of everyone</strong>, including people whose screen is typically more exposed, particularly wheelchair and phone holder users.</li>
+<li>Eventually, an essential part of making your app inclusive to people with physical motor disabilities is to make the interface nice to use with <strong>assistive technologies</strong> in general, as they often rely on these.</li>
+</ul>
+<h3 id="the-content-can-be-accessed-using-assistive-technologies">The content can be accessed using assistive technologies</h3>
+<p>Designing for assistive technologies can be challenging when you don't know where to start from. In this section, we'll walk through simple steps that will get you started.</p>
+<p><strong>1 - Grouping the elements</strong></p>
+<p><img alt="A Figma design file with accessibility annotations for the Olvid app." src="resources/c-designing-inclusive-and-accessible-software/annotation.png" /> For people who use screen readers and/or the keyboard to navigate your app, it is crucial to have the information grouped at the right level of granularity.</p>
+<ul>
+<li>If the information is too fragmented, navigating will be slower (as it will need more user inputs) and context might be lost (as the logical link between elements will not be given for people who can’t see the information hierarchy on the screen).</li>
+<li>If the information is grouped at a higher level than it should, navigating to a specific element will be harder and interactions will likely be more complicated due to the fusion of actions.</li>
+</ul>
+<p>While it certainly depends on the experience you are building and the platform you are targeting with your design, some good practices to start grouping your elements are:</p>
+<ul>
+<li>Elements that make a contextually atomic group, <em>i.e.</em> a group of elements for which we lose context if they are separated, must be grouped.</li>
+<li>Elements that share the same primary action are typically grouped. Elements that have a diverging primary actions should not be grouped, unless you can elect one primary action and demote the other to secondary.</li>
+<li>Each element of a collection view should be a group.</li>
+</ul>
+<p>Mobile and desktop navigation are quite different regarding this topic. While mobile apps typically rely technically on “accessibility elements” that can be grouped, desktop apps rely on focusability of specific parts of the interface. From a design perspective, this does not change significantly the way we should think about grouping, but it’s important to keep in mind the implementation can vary drastically, making it important to guide developers and iterate towards the targeted experience.</p>
+<p><strong>2 - Labelling the elements</strong></p>
+<p>Labelling the elements of your app is critical to ensure the understanding of the interface and content. The term “label” can have different implementation meanings depending on the platform or framework used. Here, we will use label to refer to the sentence that is typically read aloud by screen readers, including the type of the content, the value, <em>etc.</em> Frameworks and platforms typically use structured data to then generate what we call here a label.</p>
+<p>A good label must:</p>
+<ul>
+<li>Reflect the context or type of content you are presenting to the user.</li>
+<li>Tell the actual content (or value) of the element, or its alternative text if it is visual.</li>
+<li>Let the user know if it is actionable.</li>
+<li>Contain all the information a user who can see would have at disposal.</li>
+<li>Be clear and require no more context to be understood.</li>
+<li>Have the informations ordered with care to put the most important elements first, allowing users to navigate through the app rapidly without waiting for the full label to be read out loud if they don’t need to.</li>
+</ul>
+<p>For a messaging app, a label for a discussion can be:</p>
+<div class="language-text highlight"><pre><span></span><code> &quot;Michel Berger. 3 unread messages. You said: Thanks ! at 9:07. Message status: sent. Pinned. Actions available.”
+</code></pre></div>
+<p>Again, depending on the platform or framework, the ways to achieve this might differ. We will tackle this issue in platform-specific modules.</p>
+<p><strong>3 - Establishing a focus order</strong></p>
+<figure>
+    <img alt="UI representing a contact request. There is a profile picture and a name which are focused first, an &quot;accept&quot; button which is focused second, and lastly a &quot;deny&quot; button. The focus order is not the same as the graphic as the left-to-right &quot;default&quot; order." src="resources/c-designing-inclusive-and-accessible-software/order.png" />
+</figure>
+<p>When your elements are grouped and labelled, the last step to make your interface accessible to people who use assistive technologies and/or the keyboard to use your app is to decide the focus order.</p>
+<p>Let’s say we are working on an application implementing a chat. When entering a discussion, which element should be focused first? The last message, the title of the discussion, the text input?</p>
+<p>There often is no way of predicting which answer is the best. It really comes down to testing what is the most navigable, understandable and interactable.</p>
+<p>In this case, we would typically focus the last element of the discussion first, because it is typically the one of interest, and because it gives a quick access to the text input. But this is clearly a design choice that must be well-thought and tested in the context of your app.</p>
+<h3 id="the-ui-is-simple-and-intuitive">The UI is simple and intuitive</h3>
+<p>A simple and intuitive UI benefits everyone. But while this might be a convenience for most users, this is a need for some of them. Wether due to being neurodiverse or to the use of assistive technologies, having an interface that is as simple and less cluttered as possible will instantly make it more accessible and inclusive! <a href="https://doi.org/10.1007/978-1-4842-5814-9">Rob Whitaker gives us in the 12th chapter of his book</a> some insights on how to achieve this goal, summed up and a bit modified here:</p>
+<ul>
+<li>Keep the interface as less cluttered and as consistent as possible.</li>
+<li>Moving or animated content should be pausable.</li>
+<li>Limit the number of text font and sizes used. Avoid pure black-on-white text.</li>
+<li>Body text should be naturally (not fully) justified.</li>
+<li>Keep written content clear, concise and free of acronyms or idioms.</li>
+<li>Provide alternatives to text (with images, graphs, screen reader support, etc.)</li>
+<li>Limit vivid colors, especially around content.</li>
+<li>“Don’t insist on accuracy for written input. Instead, provide options.” Depending on the platform, implementing auto-completion, spell-checkers, dictation, etc. can be helpful.</li>
+<li>Avoid dark patterns, and moreover, be very clear on the consequences of the action taken by the users on your interface.</li>
+</ul>
+<h3 id="the-ui-has-options-to-prevent-motion-sickness">The UI has options to prevent motion sickness</h3>
+<p>Some people experience motion sickness when looking at animations. Some platforms allow the developers of third party apps to know whether the user as activated a setting reducing motion. It’s a good idea to include an annotation (we will tackle annotations more globally in TODO) letting the developers know when there is a know trigger to be optionally deactivated. As mentioned in <a href="B-INO.html">🔭 Inclusiveness needs overview</a>, known triggers include:</p>
+<ul>
+<li>Zooms</li>
+<li>Flashing or blinking</li>
+<li>Animations playing automatically without user interaction</li>
+<li>Parallax effects</li>
+</ul>
+<h3 id="the-ui-adapts-well-to-other-cultures">The UI adapts well to other cultures</h3>
+<p>A good design should be intuitive to everyone. While it’s difficult to see, our design choices always rely on our cultural background, which is not always shared by all users. There are many subjects to pay attention to while designing in order to make your interface feel as home for as many people possible. While it is impossible to cover everything in this module, here are some of them to start with:</p>
+<p><strong>Language</strong></p>
+<p>Supporting as many languages and dialects as possible makes it possible to many more people to use your app with ease. Organizations open-sourcing their code can consider relying on the community to help give feedback on localization of their apps. Make sure to also open support to dialects.</p>
+<p><strong>Right-to-left support</strong></p>
+<p>Many languages are written from right to left. While most frameworks and platforms provide automatic RTL support, it is important to check that elements of the interface, particularly the custom ones, are rearranged accordingly. Keep in mind that does not only apply to text alignment, but also to navigation, icons, layout, charts, <em>etc.</em> We will not detail everything here but you can find <a href="https://developer.apple.com/design/human-interface-guidelines/right-to-left">here</a> the Apple right to left guidelines that are very detailed.</p>
+<p><img alt="The settings page in Jami, in Arabic and therefore read from right to left." src="resources/c-designing-inclusive-and-accessible-software/rtl.png" /></p>
+<p><strong>Colors</strong></p>
+<p>Depending on the culture, colors can have many different meaning. The most outstanding example is certainly the case of green and red. While in most countries of the western world, green is rather positive and red negative, these colors are generally used to mean the opposite in China.</p>
+<h3 id="users-age-gender-identity-sexuality-ethnicity-financial-situation-etc-are-not-assumed">User’s age, gender identity, sexuality, ethnicity, financial situation, <em>etc.</em> are not assumed</h3>
+<p>A bias that we can have as humans is to assume others’ characteristics based on what we see around us. And as designers, we want our interfaces to feel welcoming for everyone. This is why paying attention not to assume any human characteristics or stereotype is essential when building an app. Here are some examples:</p>
+<p><strong>Content representing people and activities</strong></p>
+<p>In your app’s content and illustrations, be sure to include different ethnicities, body types, gender expressions, <em>etc</em>. when depicting people.</p>
+<p>Make sure you also include a good variety of relatable activities and cultural references in textual examples, illustrations, <em>etc</em>.</p>
+<p><strong>Gender identity &amp; expression</strong></p>
+<ul>
+<li>If your app asks for a user’s gender, make sure to provide more options that just male and female, and to add support for custom entries.</li>
+<li>Avoid using the “his” or “her” pronouns when it is not necessary. If your app needs to, be sure to ask users which pronouns they use.</li>
+<li>When depicting a human, use gender-neutral icons rather than a man or a woman.</li>
+<li>If your app requires a legal name, make sure to leave the possibility open to use a preferred name. In general and if possible, it is better not to put any constraint on which name is provided and to allow for a flexible structure to accommodate cultures where names might come in a different order.</li>
+</ul>
+<p><strong>Access to technology</strong></p>
+<p>As Whitaker reports, "[f]or an estimated 20% of Internet users, a smartphone is their only access to the Internet." It is thus crucial to ensure equal access to the features on desktop and mobile not to exclude anyone the experience you are building.</p>
+<p><strong>Digital literacy</strong></p>
+<p>If you are reading this, chance are there are proportionally very few people with as many digital skills as you. That is why it is crucial to keep in mind that your interface should not only be understandable by you or your team, but also (and most importantly) to those who didn't grow up with technology around them. This mainly comes down to making the app simple, intuitive, not cluttered, flexible, and configurable. Some platforms allow for a simplified version of your app, like <a href="https://developer.apple.com/videos/play/wwdc2023/10032/">Assistive Access on iOS</a>.</p>
+<h3 id="the-ui-takes-care-of-the-user">The UI takes care of the user</h3>
+<p>The way your app is designed can have a great impact on the user's mental health. The way content is presented, the reasons for which you push notifications, what you nudge them to do, etc. should be intentional and done empathetically. Allowing for self control and to let go of your app are crucial steps toward this goal.</p>
+<blockquote>
+<p>Feel free to contribute to this section that could be more detailed!</p>
+</blockquote>
+<h2 id="getting-creative">Getting creative</h2>
+<p><em>Once the core aspects of your app are accessible and inclusive</em>, there are many ways in which you can push the experience further while having fun getting creative and innovative. Thinking about new ways of interacting with your app can be a great challenge to tackle with your team. One good example is the "magic tap" on iOS. It allows to execute any action the developer decides when double-tapping with two fingers when VoiceOver is on. It can be used as a shortcut to access a core feature of your app, normally requiring a few more steps to the user. Think about it: what could it do in your app? Another one is the spellchecker which was recently implemented in <a href="https://jami.net/">Jami</a>, allowing people with dyslexia to type more confidently while helping everyone avoiding typos.</p>
+<h2 id="communicating-inclusive-design">Communicating inclusive design</h2>
+<p>Communicating your IUI - and especially the accessibility parts which can be graphically invisible - to developers is not an easy task. As most developers are used to receiving designs that they implement based on their experience of what using an app is like, you will likely not get a good result if your communication is not clear.</p>
+<p>The best way to communicate the UX you are aiming for users who use assistive technologies is through design annotations, so that you - as a designer - get to think about the labels, focus order, etc. before the implementation starts. We detail how to do so in the platform-specific modules.</p>
+<p>Another key to achieving your inclusiveness goals for your UI is to actively test and provide feedback using assistive technologies. Accompanying developers towards a great (inclusive) UX takes time and will likely require many iterations - not to mention that your designs will never be perfectly inclusive either!</p>
+<h2 id="activity-designing-and-iui-on-a-whiteboard">Activity: designing and IUI on a whiteboard</h2>
+<p>By groups, trainees are invited to design a simple interface (with pen and paper or any design tool they like) that aims at being as inclusive as possible.</p>
+<p>On possibility is to ask for an account creation screen for a social media app. The platform should differ from one group to the other to allow for multiple perspectives on UI design.</p>
+<ul>
+<li>The interface should include:<ul>
+<li>Fields to fill in social media information (like name, gender, hobbies, <em>etc.</em>)</li>
+<li>A button to send the form</li>
+<li>A way of going back to the home page</li>
+<li>A checkbox to accept the service’s TOS, with a link to access them</li>
+</ul>
+</li>
+</ul>
+<p>The trainer can encourage the groups to think of the ways they can use creatively what they’ve just learned, without feeling the need to implement everything: inclusion is a journey, not an issue to be tackled in ten minutes anyway!</p>
+<p>The IUI created by the trainees should be used as a way of addressing common issues like:</p>
+<ul>
+<li>What element should be grouped together? -&gt; Those that don't make sense alone.</li>
+<li>Should the back button be the last or the first element in focus order? -&gt; On mobile the first, on desktop the last.</li>
+<li>What should be selectable -&gt; On mobile, every element containing information, on desktop every interactive element.</li>
+</ul>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>Here are the key takeaways of this module:</p>
+<ul>
+<li>An inclusive app is one using which users can thrive with and feel welcome in.</li>
+<li>Designers have a big responsibility regarding inclusiveness as they are their team’s compass towards delivering an outstanding experience for everyone.</li>
+<li>The IUI should not be seen as a standard UI that was made accessible, nor as a separate UI, but as an ideal to strive for, for the entire UI to be inclusive and welcoming for everyone.</li>
+<li>Making you interface inclusive is an occasion to get creative and to think about new innovative ways of interacting with your app.</li>
+<li>Building an IUI is a long process, that can start with baby steps today.</li>
+</ul>
+<p>Remember: <strong>good design is inclusive, and good design benefits everyone!</strong></p>
+<h2 id="resources">Resources</h2>
+<p><a href="https://www.figma.com/color-contrast-checker/?background=ffffff&amp;foreground=b50202">Color Contrast Checker &amp; Accessibility Checker | Figma</a></p>
+<p><a href="https://www.figma.com/community/plugin/748533339900865323/contrast"></a></p>
+<p><a href="resources/c-designing-inclusive-and-accessible-software/AUI_Perspective_v2.excalidraw">AUI Perspective v2.excalidraw</a></p>
+<h2 id="sources">Sources</h2>
+<p><a href="https://wwnorton.com/books/9781324036661">Shew Ashley, <em>Against Technoableism: rethinking who needs improvement</em>. 2023</a></p>
+<p><a href="https://faculty.cc.gatech.edu/~beki/cs4001/Winner.pdf">Winner, Langdon (1980). <em>Do artifacts have politics?</em> Daedalus 109 (1): pp. 121--136.</a></p>
+<p><a href="https://developer.apple.com/design/human-interface-guidelines/accessibility">Apple Human Interface Guidelines: Accessibility</a></p>
+<p><a href="https://developer.apple.com/videos/play/wwdc2025/316">Apple. <em>Principles of Inclusive App Design</em></a></p>
+<p><a href="https://doi.org/10.1007/978-1-4842-5814-9">Whitaker, Rob (2020). <em>Developing Inclusive Mobile Apps: Building Accessible Apps for iOS and Android</em>, Apress Berkley.</a></p>
+<p><a href="https://dictionary.cambridge.org/dictionary/english/inclusiveness">Cambridge's dictionary's definition of inclusiveness</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="B-IAP.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: ⚗️ Bring inclusiveness and accessibility to your pipeline">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                ⚗️ Bring inclusiveness and accessibility to your pipeline
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="C-IDD.html" class="md-footer__link md-footer__link--next" aria-label="Next: 🖥️ Inclusive design for Desktop">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                🖥️ Inclusive design for Desktop
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Maxence Vahedi & Page Magnier--Slimani CC BY-SA 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.progress", "navigation.sections", "navigation.footer", "content.tabs.link"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>
