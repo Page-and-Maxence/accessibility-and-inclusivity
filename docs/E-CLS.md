@@ -9,7 +9,7 @@
 
 **👥 Audience**: Everyone
 
-**⏱️ ️Duration**: 20'
+**⏱️ Duration**: 20'
 
 **📚 Prerequisites**: None
 

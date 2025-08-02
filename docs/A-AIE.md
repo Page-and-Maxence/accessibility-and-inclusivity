@@ -7,7 +7,7 @@
 
 **👥 Audience**: Everyone
 
-**⏱️ ️Duration**: 20'
+**⏱️ Duration**: 20'
 
 **📚 Prerequisites**: [ 🫳🏿 Feeling the need for accessibility](A-FNA.md)
 

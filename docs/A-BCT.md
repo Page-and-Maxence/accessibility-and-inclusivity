@@ -7,7 +7,7 @@
 
 **👥 Audience**: Everyone
 
-**⏱️ ️Duration**: 10'
+**⏱️ Duration**: 10'
 
 **📚 Prerequisites**: [👩‍🦽 A-AIE: Accessibility & Ableism](A-AIE.md)
 

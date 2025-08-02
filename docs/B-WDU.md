@@ -7,7 +7,7 @@
 
 **👥 Audience**: Designers
 
-**⏱️ ️Duration**: 30'
+**⏱️ Duration**: 30'
 
 **📚 Prerequisites**: None
 

@@ -7,7 +7,7 @@
 
 **👥 Audience**: Everyone
 
-**⏱️ ️Duration**: 5'
+**⏱️ Duration**: 5'
 
 **📚 Prerequisites**: [🎨 Inclusive design 101](C-IDE.md)
 
